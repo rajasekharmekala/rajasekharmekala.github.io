@@ -1,0 +1,18 @@
+{
+    "works": [
+        {
+            "type": "NLP",
+            "title": "KWoC | SHERLOCKED",
+            "description": "Investigating various activation properties of neural networks",
+            "image": "images/network.jpg",
+            "link": "https://github.com/nishnik/sherlocked"
+        },
+        {
+            "type": "WEB",
+            "title": "Incremental ranking of pages in developing graphs",
+            "description": "Updating Page Rank for web pages in evolving Graphs",
+            "image": "images/pagerank.jfif",
+            "link": "https://github.com/rajasekharmekala/pagerank"
+        }
+    ]
+}

@@ -2271,3 +2271,46 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+
+    /* Add a black background color to the top navigation */
+.worknav {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Style the links inside the navigation bar */
+.worknav a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border: 0;
+  border-radius: 0.15rem;
+}
+
+/* Change the color of links on hover */
+.worknav a:hover {
+  background-color: #ddd;
+}
+
+/* Add a color to the active/current link */
+.worknav a.active {
+  background-color:  #f56a6a;
+  color: white;
+}
+
+.myworks-art-image{
+  max-height: 20rem;
+}
+
+.NLP .WEB{
+  display: none;
+}
+
+.WEB .NLP{
+  display: none;
+}
