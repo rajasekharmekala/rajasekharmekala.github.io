@@ -10,7 +10,7 @@
         {
             "type": "WEB",
             "title": "Incremental ranking of pages in developing graphs",
-            "description": "Updating Page Rank for web pages in evolving Graphs",
+            "description": "Updating Page Rank for web pages in evolving graphs",
             "image": "images/pagerank.jfif",
             "link": "https://github.com/rajasekharmekala/pagerank"
         }
