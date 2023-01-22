@@ -2,96 +2,114 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Raja Sekhar Reddy Mekala
     - name: Date of Birth
-      value: 14th March 1879
+      value: 20th March 1997
     - name: Languages
-      value: English, German
+      value: English, Hindi, Telugu
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Masters
+      institution: University of California, Irvine, USA
+      year: 2021-PRESENT
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Computer Science (MS CS)
+        - Relevant Coursework - Distributed Systems, Operating Systems, Transaction processing, Algorithm analysis, Networks Natural language processing, Machine Learning, Image understanding, Deep Generative Models, Probability and Statistics
+    - title: Bachelor of Technology
+      institution: Indian Institute of Technology, Kharagpur, India
+      year: 2014-2018
       description:
-        - Description 1.
-        - Description 2.
-
+        - Electrical Engineering with minor in Computer Science
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Software Engineer Intern
+      institution: TruckX
+      year: Jun 2022 - Sep 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Created applications to certify HOS compliance of drivers by working on Bluetooth, Wired ELD, DashCam, and various other IoT devices. Liaise with key stakeholders to identify project status/progress for effective decision-making. Create and conceptualize solutions to enhance consumer quality of life and automate error-prone procedures. Provide completely documented and automated code as a member of the team.
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+            - Set up Cloud Infra and developed/created microservices to live stream asset trackers feed.
+            - Delivered corresponding analytics on React-native android and iOS applications.
+            - Executed new features from conception to completion while estimating monetary value.      
+
+    - title: Deep learning Engineer Intern
+      institution: Siterecon.ai, Bangalore, India
+      year: Jun 2022 - Jul 2022
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Worked on providing high-resolution segmentation services using deep learning models for geospatial images, area estimation for private properties
+        - Set up the docker images, cloud infrastructure, and MLOps for frequent experimentation with computer vision models
+    - title: Software Engineer I-II
+      institution: Adobe, Noida, India.
+      year: 2018-2021
       description:
+        - title: Integrated Adobe Robohelp with external knowledge portals, such as Salesforce Knowledge Base, Zendesk Help Center, and ServiceNow. Created "Documentation Help center" on Adobe Experience Manager from scratch and implemented analytics microservices as REST-APIs for client applications. Coordinated and co-mentored teams on Natural Language Machine Learning applications. Redesigned Adobe Robohelp and Server to React, reducing reliance on Adobe Flash and Adobe Torq in five months.
+          contents:
+            - Received Special Contribution award in April 2020 and Spot award in Feb 2021.
+            - Promoted from Software Engineer I to Software Engineer II due to exceptional performance.
+            - Improved search latency by 27% and relevance by 31% relevancy on Adobe Robohelp-generated documentation.
+            - Set up JSON-based framework from scratch for webpages in React with products of TechComm and PPBU at Adobe.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Big Data Research Intern
+      institution: Adobe Research, Bangalore, India
+      year: May 2017 - Jul 2017
+      description:
+        -Used machine learning approaches to identify, detect the cause and mitigate the phenomenon of interference among virtual machines in the cloud environment
+        - Worked with distributed computing frameworks like Apache Spark and Hadoop for experimentation with memory, network bandwidth intensive jobs
 
-- title: Open Source Projects
+- title: Teaching
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Teaching Assistant (course - GDIM 25)
+      year: Jan 2023 - PRESENT
+      description: 
+        - Game Design and Interactive Media
 
-- title: Honors and Awards
+    - title: Teaching Assistant (course - INF 133)
+      year: Sep 2022 - Dec 2022
+      description: 
+        - User Interaction Software
+
+    - title: Teaching Assistant (courses - INF 191A, 191B)
+      year: Jan 2022 - Jun 2022
+      description: 
+        - Senior Design Project
+
+    - title: Tutor (course - INF 191A)
+      year: Sep 2021 - Dec 2021
+      description: 
+        - Senior Design Project
+
+
+
+- title: Awards & Honors
   type: time_table
   contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+    - year: 2017 – 2022
+      items: Active member and collaborator at KWoC (“Kharagpur Winter of Code”) open-source community 
+    - year: 2020 – 2021
+      items: Mentored incoming college interns at Bright Idea, Adobe 
+    - year: Feb 2021
+      items: Received Spot award for spontaneous resolution of customer issues, by the director of PPBU, Adobe 
+    - year: Apr 2020
+      items: Awarded Special contribution award for innovative implementations in Adobe Robohelp Server 
+    - year: Jun 2017
+      items: Received best intern project award among all 23 intern projects at Adobe
+    - year: Apr 2014
+      items: Secured All India Rank 481, 120 in IIT JEE Advanced, Mains respectively among 1.5 million applicants
+    - year: Apr 2013
+      items: Selected for one-month training program to represent India at International Maths Olympiad
+    - year: Mar 2013
+      items: Awarded the prestigious KVPY Scholarship from Department of Science and Technology, Govt of India
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
 
-- title: Other Interests
+- title: Technical skills
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Programming Languages:</u> Java, Python, C/C++, SQL, Bash, Matlab, & Scala
+    - <u>Web Development:</u> React, Node.js, HTML, CSS, JS, Jquery, Django, Flask, FastAPI, & GraphQL
+    - <u>Databases:</u>  MYSQL, Oracle SQL, PostgreSQL, & MongoDB
+    - <u>Infrastructure:</u> Docker, Kubernetes, GCP, Azure, & AWS
+    - <u>Other:</u> Git, Spring-Boot, Maven, VS Code, Visual Studio, IntelliJ, & Eclipse
