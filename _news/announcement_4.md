@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-12-05
+date: 2023-08-08
 inline: true
 ---
 
-Attended EMNLP 2022 for the first time (Abu Dhabi) :smile:
+Started as software developer at TruckX

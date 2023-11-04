@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-06-20
+date: 2022-12-05
 inline: true
 ---
 
-Started my Internship at TruckX, MountainView
+Attended EMNLP 2022 for the first time (Abu Dhabi) :smile:

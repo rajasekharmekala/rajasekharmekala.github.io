@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-06-10
+date: 2022-10-06
 inline: true
 ---
 
-Survived 3rd quarter at UCI
+Published my first system demonstration paper in NLP

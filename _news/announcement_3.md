@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-10-06
+date: 2023-06-20
 inline: true
 ---
 
-Published my first system demonstration paper in NLP
+Graduated as a masters student at UCI
