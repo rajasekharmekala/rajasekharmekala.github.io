@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-10-28
+date: 2023-11-27
 inline: true
 ---
 
-Our paper accepted to MathAI Workshop
+Started working at Adobe (San Jose), in Adobe Journey Optimizer team.
