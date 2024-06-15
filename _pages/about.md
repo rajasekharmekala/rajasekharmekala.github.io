@@ -6,7 +6,7 @@ subtitle: Adobe SWE, TruckX SDE, <a href='https://uci.edu/'>MS CS UCI</a> | <a h
 
 profile:
   align: right
-  image: rajasekhar_yellowstone.png
+  image: rajasekhar.png
   image_circular: false # crops the image to make it circular
   address: >
     <p>3375, Homestead Rd</p>
