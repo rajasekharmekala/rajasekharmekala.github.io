@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects &amp; Systems — Rajasekhar Reddy Mekala</title>
+  <meta name="description" content="Engineering systems, research projects, and web applications built by Rajasekhar Reddy Mekala (Adobe Brand Concierge BCOS, EchoPrompt, SNOOPY, SHERLOCKED, PageRank, 2048).">
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body id="top">
+  <div class="page-container">
+    <div class="prenavbar">
+      <div class="topline">
+        <div>Projects, Production AI Systems &amp; Research Prototypes</div>
+        <div class="topllinks">
+          <a href="../index.html">Home</a> |
+          <a href="https://rajasekharmekala.github.io/personal-wiki/">The Morning Brief (Daily Blogs)</a> |
+          <a href="https://rajasekharmekala.github.io/portfolio/">Portfolio Research Desk</a> |
+          <a href="https://rajasekharmekala.github.io/travel-research/">Travel Research</a>
+        </div>
+      </div>
+      <div class="logotab">
+        <div>
+          <a href="../index.html" class="logo-link">
+            <div class="logo-title">Projects &amp; Production Systems</div>
+            <div class="logo-subtitle">AI Systems &bull; NLP Research &bull; Machine Learning &bull; Web Applications</div>
+          </a>
+        </div>
+        <div class="quick-links">
+          <a class="pill-link" href="../repositories/">Open-Source Repositories</a>
+          <a class="pill-link" href="https://github.com/rajasekharmekala">GitHub Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="navtabs">
+        <a href="../index.html">About &amp; Overview</a>
+        <a href="../cv/">Curriculum Vitae</a>
+        <a href="../publications/">Publications &amp; Patents</a>
+        <a href="index.html" class="active">Projects &amp; Systems</a>
+        <a href="../repositories/">Repositories</a>
+      </div>
+      <div class="sisnav">
+        <span class="sis-label">Live Desks:</span>
+        <a href="https://rajasekharmekala.github.io/personal-wiki/">Daily Blogs</a>
+        <a href="https://rajasekharmekala.github.io/portfolio/">Portfolio Desk</a>
+        <a href="https://rajasekharmekala.github.io/travel-research/">Travel Desk</a>
+      </div>
+    </div>
+
+    <div class="subnavbar">
+      <div>
+        Categories:
+        <a href="#ai-systems">AI Systems</a> &bull;
+        <a href="#research">NLP &amp; ML Research</a> &bull;
+        <a href="#web">Web &amp; Graph Systems</a> &bull;
+        <a href="#live-portals">Live GitHub Pages Portals</a>
+      </div>
+      <div>
+        See also: <a href="../repositories/">GitHub Repositories &amp; Open-Source Contributions &rarr;</a>
+      </div>
+    </div>
+
+    <!-- AI Systems -->
+    <div class="section-header" id="ai-systems">
+      <span>Category: AI Systems</span>
+    </div>
+
+    <div class="deepdive-container">
+      <div class="deepdive-head">
+        <h3 class="deepdive-title">Brand Concierge (BCOS) — Enterprise Multi-Tenant LLM Agent Orchestrator, Grounded Neural Retrieval &amp; Automated Program Optimization at Adobe</h3>
+        <span class="deepdive-meta">Adobe Inc. &bull; Importance: 1</span>
+      </div>
+      <div class="deepdive-keypts">
+        <strong>Adobe Brand Concierge (BCOS)</strong> is an enterprise Generative AI and multi-agent platform powering conversational brand experiences for global enterprises (including NVIDIA, Synopsys, ITC, and Dick&rsquo;s Sporting Goods).
+      </div>
+      <ul>
+        <li><strong>Agent Orchestration Engine (BCOS):</strong> Architected the unified PydanticAI agent runtime with declarative manifest compilation, replacing multi-hop legacy services with a single high-performance agent runtime supporting Agent-to-Agent (A2A) JSON-RPC protocols.</li>
+        <li><strong>Declarative Tool Framework:</strong> Designed extensible Pydantic tool schemas with declarative pre/post execution hooks, state capture primitives, and configurable <code>ToolErrorPolicy</code> for deterministic runtime recovery.</li>
+        <li><strong>Neural Source Attribution:</strong> Engineered a factory-based source attribution engine with remote cross-encoder rerankers (BGE-M3, E5-curriculum), client-side normalization, and token safeguards (&lt;512 tokens), delivering grounded citation without hallucinations.</li>
+        <li><strong>High-Performance Inference (Lucid Lens):</strong> Developed CPU-only Text Embeddings Inference (TEI) microservices on ONNX Runtime (ORT) with dynamic axes, eliminating Candle batching limits to rerank 30+ candidate passages in a single batch with sub-second p50 latency (588ms&ndash;796ms).</li>
+        <li><strong>Automated Agent Optimization (Eval Studio):</strong> Integrated Genetic-Pareto Prompt Optimization (GEPA) and DSPy into Eval Studio, achieving Pareto-optimal prompt mutations with 35x fewer rollouts than RL baselines.</li>
+        <li><strong>Streaming Serving &amp; Traffic Isolation:</strong> Hardened core FastAPI/MongoDB conversation engine with Server-Sent Events (SSE) token streaming, artifact state replacement (<code>StreamEventProcessor</code>), and sandbox isolation (<code>TrafficControlEnforcer</code>).</li>
+      </ul>
+    </div>
+
+    <!-- Research & ML -->
+    <div class="section-header" id="research">
+      <span>Category: Research &amp; Machine Learning</span>
+    </div>
+
+    <div class="deepdive-container">
+      <div class="deepdive-head">
+        <h3 class="deepdive-title"><a href="https://arxiv.org/abs/2309.10687">EchoPrompt (NAACL 2024) — Instructing the Model to Rephrase Queries for Improved In-Context Learning and Chain-of-Thought Reasoning</a></h3>
+        <span class="deepdive-meta">UC Irvine NLP Lab &bull; Importance: 2</span>
+      </div>
+      <div class="deepdive-keypts">
+        <strong>EchoPrompt</strong> is a simple yet effective approach that prompts language models to rephrase their queries before answering them. Published in <em>Findings of NAACL 2024</em> with Yasaman Razeghi and Dr. Sameer Singh at UC Irvine.
+      </div>
+      <ul>
+        <li>Evaluated across four causal language model families on numerical reasoning (GSM8K, SVAMP), reading comprehension (DROP), and logical reasoning tasks.</li>
+        <li>Improves Zero-Shot-CoT accuracy on <code>code-davinci-002</code> by 5% on numerical reasoning and 13% on reading comprehension.</li>
+        <li>Demonstrates that both the original query and the model-generated rephrased version provide complementary semantic signals that stabilize in-context learning.</li>
+      </ul>
+      <div class="pub-actions">
+        <a class="pub-btn" href="https://arxiv.org/abs/2309.10687">arXiv:2309.10687</a>
+        <a class="pub-btn" href="https://arxiv.org/pdf/2309.10687.pdf">Paper PDF</a>
+      </div>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <div>
+          <img class="project-thumb" src="../assets/img/code-screenshot.png" alt="SNOOPY Interface">
+          <div class="portal-card-kicker">NLP System Demo &bull; EMNLP 2022</div>
+          <div class="portal-card-title"><a href="https://aclanthology.org/2022.emnlp-demos.39">SNOOPY — Pretraining Term Frequency Explorer</a></div>
+          <p class="portal-card-desc">
+            Online visual interface for exploring the effect of pretraining term frequencies (The Pile) on few-shot language model performance across GPT-Neo, GPT-J, OPT, and BLOOM.
+          </p>
+        </div>
+        <div class="portal-card-foot">
+          <a href="https://aclanthology.org/2022.emnlp-demos.39.pdf">PDF</a> &bull; <a href="http://snoopy.ics.uci.edu/">Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div>
+          <img class="project-thumb" src="../assets/img/network.jpg" alt="KWoC SHERLOCKED">
+          <div class="portal-card-kicker">Machine Learning &bull; KWoC</div>
+          <div class="portal-card-title"><a href="https://github.com/nishnik/sherlocked">KWoC | SHERLOCKED</a></div>
+          <p class="portal-card-desc">
+            Investigating activation properties and feature representations of deep neural networks during Kharagpur Winter of Code (KWoC).
+          </p>
+        </div>
+        <div class="portal-card-foot">
+          <a href="https://github.com/nishnik/sherlocked">GitHub Repository &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web & Graph Systems -->
+    <div class="section-header" id="web">
+      <span>Category: Web &amp; Graph Systems</span>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <div>
+          <img class="project-thumb" src="../assets/img/2048.png" alt="2048 Game in React">
+          <div class="portal-card-kicker">Web Application &bull; React</div>
+          <div class="portal-card-title"><a href="https://rajasekharmekala.github.io/simple-2048-implementation">2048 Game in React</a></div>
+          <p class="portal-card-desc">
+            Interactive implementation of the 2048 sliding tile puzzle game in React with keyboard controls and animations.
+          </p>
+        </div>
+        <div class="portal-card-foot">
+          <a href="https://rajasekharmekala.github.io/simple-2048-implementation">Play Live Game &rarr;</a> &bull;
+          <a href="https://github.com/rajasekharmekala/simple-2048-implementation">Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div>
+          <img class="project-thumb" src="../assets/img/pagerank.jfif" alt="PageRank in Evolving Graphs">
+          <div class="portal-card-kicker">Web &amp; Graph Algorithms</div>
+          <div class="portal-card-title"><a href="https://github.com/rajasekharmekala/pagerank">PageRank in Evolving Graphs</a></div>
+          <p class="portal-card-desc">
+            Updating PageRank scores incrementally for web pages in large, dynamically evolving web graphs without full power-iteration recomputation.
+          </p>
+        </div>
+        <div class="portal-card-foot">
+          <a href="https://github.com/rajasekharmekala/pagerank">GitHub Repository &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live GitHub Pages Portals -->
+    <div class="section-header" id="live-portals">
+      <span>Live Research Desks &amp; Daily Portals</span>
+    </div>
+
+    <div class="portal-cards">
+      <div class="portal-card">
+        <div>
+          <div class="portal-card-kicker">Daily Tech &amp; AI Digest</div>
+          <div class="portal-card-title"><a href="https://rajasekharmekala.github.io/personal-wiki/">The Morning Brief (Personal Wiki)</a></div>
+          <p class="portal-card-desc">Daily curated AI, systems, and market intelligence issues in the Techmeme edition layout.</p>
+        </div>
+        <div class="portal-card-foot"><a href="https://rajasekharmekala.github.io/personal-wiki/">Visit Personal Wiki &rarr;</a></div>
+      </div>
+
+      <div class="portal-card">
+        <div>
+          <div class="portal-card-kicker">US &amp; India Equities</div>
+          <div class="portal-card-title"><a href="https://rajasekharmekala.github.io/portfolio/">Portfolio Research Desk</a></div>
+          <p class="portal-card-desc">Stan Weinstein Stage 2 momentum scanner, market intelligence reports, and deep business monographs.</p>
+        </div>
+        <div class="portal-card-foot"><a href="https://rajasekharmekala.github.io/portfolio/">Visit Portfolio Desk &rarr;</a></div>
+      </div>
+
+      <div class="portal-card">
+        <div>
+          <div class="portal-card-kicker">Travel Monographs</div>
+          <div class="portal-card-title"><a href="https://rajasekharmekala.github.io/travel-research/">Travel Research Desk</a></div>
+          <p class="portal-card-desc">Structured destination guides, itineraries, and field research.</p>
+        </div>
+        <div class="portal-card-foot"><a href="https://rajasekharmekala.github.io/travel-research/">Visit Travel Research &rarr;</a></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 Rajasekhar Reddy Mekala &bull; <a href="../index.html">Home</a> &bull; <a href="#top">Back to Top &uarr;</a>
+    </div>
+  </div>
+</body>
+</html>
