@@ -46,6 +46,23 @@ a:hover {
   text-decoration: underline;
 }
 
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  vertical-align: middle;
+}
+.link-icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  flex: 0 0 auto;
+}
+.icon-only .link-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
 .page-container {
   max-width: 1280px;
   margin: 0 auto;
