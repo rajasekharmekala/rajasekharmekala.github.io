@@ -28,11 +28,11 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Software Engineer — Generative AI Platforms & Agent Systems
+    - title: Software Engineer — Agentic Systems & LLM Platforms (Adobe Brand Concierge)
       institution: Adobe, Santa Clara, CA
       year: Jun 2023 - Present
       description:
-        - title: Architecting core runtime systems, neural retrieval engines, and automated optimization platforms for Adobe Brand Concierge (and Adobe Journey Optimizer).
+        - title: Part of the 0->1 core engineering team for Adobe Brand Concierge (joining one month post-ideation), driving foundational PoCs and technical spikes into production across runtime systems, neural retrieval engines, and automated optimization platforms (previously Adobe Journey Optimizer).
           contents:
             - Architected the unified Brand Concierge Operating System (BCOS) using PydanticAI, replacing multi-hop legacy pipelines with a single high-performance agent runtime supporting declarative manifest compilation and A2A JSON-RPC protocols.
             - Designed an extensible Pydantic tool configuration subsystem with declarative pre/post execution hooks, state capture primitives, and configurable ToolErrorPolicy for deterministic error recovery.

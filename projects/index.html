@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects &amp; Systems — Rajasekhar Reddy Mekala</title>
-  <meta name="description" content="Engineering systems, research projects, and web applications built by Rajasekhar Reddy Mekala (Adobe Brand Concierge BCOS, EchoPrompt, SNOOPY, SHERLOCKED, PageRank, 2048).">
+  <meta name="description" content="Production LLM agent platforms, neural retrieval infrastructure, and NLP research systems built by Rajasekhar Reddy Mekala (Adobe Brand Concierge BCOS, EchoPrompt, SNOOPY).">
   <link rel="stylesheet" href="../site.css">
 </head>
 <body id="top">
@@ -22,7 +22,7 @@
         <div>
           <a href="../index.html" class="logo-link">
             <div class="logo-title">Projects &amp; Production Systems</div>
-            <div class="logo-subtitle">AI Systems &bull; NLP Research &bull; Machine Learning &bull; Web Applications</div>
+            <div class="logo-subtitle">LLM Agent Platforms &bull; Neural Retrieval &bull; Applied NLP Research</div>
           </a>
         </div>
         <div class="quick-links">
@@ -49,10 +49,8 @@
     <div class="subnavbar">
       <div>
         Categories:
-        <a href="#ai-systems">AI Systems</a> &bull;
-        <a href="#research">NLP &amp; ML Research</a> &bull;
-        <a href="#web">Web &amp; Graph Systems</a> &bull;
-        <a href="#live-portals">Live Research Desks</a>
+        <a href="#ai-systems">Agentic &amp; AI Systems</a> &bull;
+        <a href="#research">LLM &amp; NLP Research</a>
       </div>
       <div>
         See also: <a href="../repositories/">GitHub Repositories &amp; Open-Source Contributions &rarr;</a>
@@ -70,13 +68,13 @@
         <span class="deepdive-meta">Adobe Inc. &bull; Importance: 1</span>
       </div>
       <div class="deepdive-keypts">
-        Adobe Brand Concierge is an enterprise Generative AI platform. The linked CV describes contributions to its agent runtime, retrieval and inference services, and evaluation infrastructure.
+        0&rarr;1 enterprise agentic application at Adobe. Joined roughly a month after initial ideation and led most foundational PoCs and technical spikes from prototype to production across the multi-tenant agent runtime, grounded neural retrieval/CPU inference, and automated agent optimization.
       </div>
       <ul>
         <li><strong>Agent Orchestration Engine:</strong> Built the Brand Concierge Operating System (BCOS) with PydanticAI, declarative manifest compilation, and Agent-to-Agent JSON-RPC support.</li>
         <li><strong>Declarative Tool Framework:</strong> Designed extensible Pydantic tool schemas with declarative pre/post execution hooks, state capture primitives, and configurable <code>ToolErrorPolicy</code> for deterministic runtime recovery.</li>
         <li><strong>Neural Source Attribution:</strong> Integrated remote cross-encoder rerankers (bge-reranker-v2-m3, e5-curriculum) with score normalization, token limits, and request batching.</li>
-        <li><strong>High-Performance Inference (Lucid Lens):</strong> Built CPU-only Text Embeddings Inference services on ONNX Runtime with dynamic axes for batch reranking of 30+ passages, with reported sub-second p50 latency.</li>
+        <li><strong>High-Performance Inference (Lucid Lens):</strong> Built CPU-only Text Embeddings Inference services on ONNX Runtime with dynamic axes for batch reranking of 30+ passages, delivering sub-second p50 latency.</li>
         <li><strong>Automated Agent Optimization:</strong> Integrated GEPA and DSPy into Eval Studio for reflective prompt compilation.</li>
         <li><strong>Streaming Serving &amp; Traffic Isolation:</strong> Hardened core FastAPI/MongoDB conversation engine with Server-Sent Events (SSE) token streaming, artifact state replacement (<code>StreamEventProcessor</code>), and sandbox isolation (<code>TrafficControlEnforcer</code>).</li>
       </ul>
@@ -119,72 +117,6 @@
         <div class="portal-card-foot">
           <a href="https://aclanthology.org/2022.emnlp-demos.39.pdf">PDF</a>
         </div>
-      </div>
-
-      <div class="project-card">
-        <div>
-          <img class="project-thumb" src="../assets/img/network.jpg" alt="KWoC SHERLOCKED">
-          <div class="portal-card-kicker">Machine Learning &bull; KWoC</div>
-          <div class="portal-card-title"><a href="https://github.com/nishnik/sherlocked">KWoC | SHERLOCKED</a></div>
-          <p class="portal-card-desc">
-            Investigating activation properties and feature representations of deep neural networks during Kharagpur Winter of Code (KWoC).
-          </p>
-        </div>
-        <div class="portal-card-foot">
-          <a href="https://github.com/nishnik/sherlocked">GitHub Repository &rarr;</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Web & Graph Systems -->
-    <div class="section-header" id="web">
-      <span>Category: Web &amp; Graph Systems</span>
-    </div>
-
-    <div class="project-grid">
-      <div class="project-card">
-        <div>
-          <img class="project-thumb" src="../assets/img/2048.png" alt="2048 Game in React">
-          <div class="portal-card-kicker">Web Application &bull; React</div>
-          <div class="portal-card-title"><a href="https://rajasekharmekala.github.io/simple-2048-implementation">2048 Game in React</a></div>
-          <p class="portal-card-desc">
-            React implementation of the 2048 sliding tile puzzle game.
-          </p>
-        </div>
-        <div class="portal-card-foot">
-          <a href="https://rajasekharmekala.github.io/simple-2048-implementation">Play Live Game &rarr;</a> &bull;
-          <a href="https://github.com/rajasekharmekala/simple-2048-implementation">Source Code</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div>
-          <img class="project-thumb" src="../assets/img/pagerank.jfif" alt="PageRank in Evolving Graphs">
-          <div class="portal-card-kicker">Web &amp; Graph Algorithms</div>
-          <div class="portal-card-title"><a href="https://github.com/rajasekharmekala/pagerank">PageRank in Evolving Graphs</a></div>
-          <p class="portal-card-desc">
-            Updating PageRank scores incrementally for web pages in large, dynamically evolving web graphs without full power-iteration recomputation.
-          </p>
-        </div>
-        <div class="portal-card-foot">
-          <a href="https://github.com/rajasekharmekala/pagerank">GitHub Repository &rarr;</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Live Research Desks -->
-    <div class="section-header" id="live-portals">
-      <span>Live Research Desks</span>
-    </div>
-
-    <div class="portal-cards">
-      <div class="portal-card">
-        <div>
-          <div class="portal-card-kicker">US &amp; India Equities</div>
-          <div class="portal-card-title"><a href="https://rajasekharmekala.github.io/portfolio/">Portfolio Research Desk</a></div>
-          <p class="portal-card-desc">Stan Weinstein Stage 2 momentum scanner, market intelligence reports, and deep business monographs.</p>
-        </div>
-        <div class="portal-card-foot"><a href="https://rajasekharmekala.github.io/portfolio/">Visit Portfolio Desk &rarr;</a></div>
       </div>
     </div>
 
