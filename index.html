@@ -16,7 +16,7 @@
         <div class="topllinks">
           <a href="index.html"><strong>Home</strong></a> |
           <a class="icon-link" href="https://x.com/rajasekhar_732"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#x"/></svg>X (@rajasekhar_732)</a> |
-          <a href="https://rajasekharmekala.github.io/portfolio/">Portfolio Research Desk</a>
+          <a class="icon-link" href="https://github.com/rajasekharmekala"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#github"/></svg>GitHub</a>
         </div>
       </div>
       <div class="logotab">
@@ -44,10 +44,6 @@
         <a href="projects/">Projects &amp; Systems</a>
         <a href="repositories/">Repositories</a>
       </div>
-      <div class="sisnav">
-        <span class="sis-label">Live Desks:</span>
-        <a href="https://rajasekharmekala.github.io/portfolio/">Portfolio Desk</a>
-      </div>
     </div>
 
     <!-- Subnavbar -->
@@ -59,7 +55,7 @@
         <a href="#pillars">Core Pillars</a>
       </div>
       <div>
-        Contact: <a class="icon-link icon-only" href="mailto:rrmekala@uci.edu" aria-label="Email rrmekala@uci.edu" title="Email rrmekala@uci.edu"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#mail"/></svg></a> |
+        Contact: <a class="icon-link" href="mailto:rrmekala@uci.edu"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#mail"/></svg>rrmekala@uci.edu</a> |
         <a class="icon-link" href="https://x.com/rajasekhar_732"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#x"/></svg>X (@rajasekhar_732)</a>
       </div>
     </div>
@@ -85,11 +81,31 @@
             <div class="addr">Santa Clara, California</div>
           </div>
           <p>
-            I am a Software &amp; ML Systems Engineer at <strong>Adobe</strong> (Santa Clara, CA) on the 0&rarr;1 core engineering team building <strong>Adobe Brand Concierge</strong> (and previously Adobe Journey Optimizer). Joining roughly a month after initial product ideation, I have driven many of the foundational PoCs and technical spikes from prototype into production—spanning multi-tenant agent orchestration (PydanticAI, Model Context Protocol, A2A), grounded RAG with sub-second CPU neural cross-encoder rerankers, automated prompt and program optimization (GEPA, DSPy), and high-throughput streaming serving infrastructure.
+            I am a Software Engineer specializing in <strong>Agentic Systems &amp; LLM Platforms</strong> at <strong>Adobe</strong> (Santa Clara, CA) on the 0&rarr;1 core engineering team building <strong>Adobe Brand Concierge</strong> (and previously Adobe Journey Optimizer). Joining roughly a month after initial product ideation, I have driven many of the foundational PoCs and technical spikes from prototype into production—spanning multi-tenant agent orchestration (PydanticAI, Model Context Protocol, A2A), grounded RAG with sub-second CPU neural cross-encoder rerankers, automated prompt and program optimization (GEPA, DSPy), and high-throughput streaming serving infrastructure.
           </p>
           <p>
             Previously, I earned my M.S. in Computer Science at <a href="https://uci.edu/">UC Irvine</a> (UCI NLP Lab with <a href="https://sameersingh.org/">Dr. Sameer Singh</a>), researching in-context learning, prompt robustness, and chain-of-thought reasoning in LLMs (published at <strong>NAACL 2024</strong> and <strong>EMNLP 2022</strong>), following a B.Tech at <a href="http://www.iitkgp.ac.in/">IIT Kharagpur</a>. Earlier, I built distributed telemetry microservices at <a href="https://truckx.com/">TruckX</a>, search and analytics systems at Adobe (2018&ndash;2021), and cloud performance models at Adobe Research, co-authoring US Patent US20190354388.
           </p>
+        </div>
+
+        <!-- Featured Systems & Projects -->
+        <div class="section-header" id="featured-systems">
+          <span>Featured Agentic &amp; AI Systems</span>
+          <span class="section-header-sub"><a href="projects/">All Projects &amp; Systems &rarr;</a></span>
+        </div>
+
+        <div class="deepdive-container">
+          <div class="deepdive-head">
+            <h3 class="deepdive-title">Adobe Brand Concierge (BCOS) — 0&rarr;1 Multi-Tenant Agent Platform &amp; Retrieval Infrastructure</h3>
+            <span class="deepdive-meta">Adobe Inc. &bull; 2023&ndash;Present</span>
+          </div>
+          <div class="deepdive-sub">PydanticAI &bull; Model Context Protocol &bull; ONNX Neural Retrieval &bull; GEPA / DSPy</div>
+          <div class="deepdive-keypts">Core 0&rarr;1 engineering from early PoCs and spikes through enterprise production pilots (NVIDIA, Synopsys, ITC, DSG).</div>
+          <ul>
+            <li><strong>Unified Multi-Tenant Agent Runtime:</strong> Replaced multi-hop legacy pipelines with a single PydanticAI agent runtime (BCOS) supporting declarative manifest compilation, A2A JSON-RPC, deterministic tool error recovery (<code>ToolErrorPolicy</code>), SSE token streaming, and tenant/sandbox traffic isolation.</li>
+            <li><strong>Sub-Second CPU Neural Retrieval:</strong> Eliminated Candle batching limits by building CPU-only ONNX Runtime Text Embeddings Inference (TEI) services with dynamic axes—reranking 30+ candidate passages in a single batch at <strong>588ms&ndash;796ms p50 latency</strong> alongside cross-encoder citation attribution (<code>bge-reranker-v2-m3</code>, <code>e5-curriculum</code>).</li>
+            <li><strong>Automated Agent Optimization &amp; Caching:</strong> Integrated GEPA and DSPy into Eval Studio for Pareto-optimal prompt compilation with <strong>35x fewer rollouts</strong> than RL baselines, built a local FastEmbed semantic Q&amp;A routing cache for sub-millisecond lookups, and filed three Adobe invention disclosures.</li>
+          </ul>
         </div>
 
         <!-- Selected Publications & Patents -->
@@ -188,26 +204,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Featured Systems & Projects -->
-        <div class="section-header" id="featured-systems">
-          <span>Featured Engineering Systems &amp; Research Projects</span>
-          <span class="section-header-sub"><a href="projects/">All Projects &amp; Repositories &rarr;</a></span>
-        </div>
-
-        <div class="deepdive-container">
-          <div class="deepdive-head">
-            <h3 class="deepdive-title">Adobe Brand Concierge (BCOS) — Multi-Tenant Agent Platform &amp; Retrieval Infrastructure</h3>
-            <span class="deepdive-meta">Adobe Inc. &bull; 2023&ndash;Present</span>
-          </div>
-          <div class="deepdive-sub">PydanticAI &bull; Model Context Protocol &bull; ONNX Neural Retrieval &bull; GEPA / DSPy</div>
-          <div class="deepdive-keypts">Architecting the runtime, retrieval, and optimization layers powering multi-tenant enterprise LLM agents.</div>
-          <ul>
-            <li><strong>Agent Runtime &amp; Tooling:</strong> Designed the Brand Concierge Operating System (BCOS) with PydanticAI, declarative manifest compilation, A2A JSON-RPC, deterministic <code>ToolErrorPolicy</code> recovery, SSE token streaming, and multi-tenant traffic/sandbox isolation.</li>
-            <li><strong>Grounded Retrieval &amp; Inference (Lucid Lens):</strong> Built CPU-only ONNX Runtime Text Embeddings Inference and cross-encoder reranking services (<code>bge-reranker-v2-m3</code>, <code>e5-curriculum</code>) with dynamic axes for sub-second p50 batch reranking.</li>
-            <li><strong>Automated Agent Optimization:</strong> Integrated GEPA and DSPy into Eval Studio for reflective prompt/program compilation, alongside three Adobe invention disclosures on demand-paged agent context, typed manifest evolution, and anti-collusion judge/agent optimization.</li>
-          </ul>
-        </div>
       </div>
 
       <!-- Right Sidebar Column -->
@@ -270,7 +266,7 @@
     </div>
 
     <div class="footer">
-      &copy; 2026 Rajasekhar Reddy Mekala &bull; Unified Techmeme / Research Desk Edition &bull;
+      &copy; 2026 Rajasekhar Reddy Mekala &bull;
       <a href="#top">Back to Top &uarr;</a>
     </div>
   </div>

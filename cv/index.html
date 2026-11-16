@@ -15,7 +15,7 @@
         <div class="topllinks">
           <a href="../index.html">Home</a> |
           <a class="icon-link" href="https://x.com/rajasekhar_732"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#x"/></svg>X (@rajasekhar_732)</a> |
-          <a href="https://rajasekharmekala.github.io/portfolio/">Portfolio Research Desk</a>
+          <a class="icon-link" href="https://github.com/rajasekharmekala"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#github"/></svg>GitHub</a>
         </div>
       </div>
       <div class="logotab">
@@ -38,10 +38,6 @@
         <a href="../publications/">Publications &amp; Patents</a>
         <a href="../projects/">Projects &amp; Systems</a>
         <a href="../repositories/">Repositories</a>
-      </div>
-      <div class="sisnav">
-        <span class="sis-label">Live Desks:</span>
-        <a href="https://rajasekharmekala.github.io/portfolio/">Portfolio Desk</a>
       </div>
     </div>
 
@@ -71,7 +67,7 @@
           <tr><td class="date-col" style="width: 180px;">Full Name</td><td><strong>Rajasekhar Reddy Mekala</strong></td></tr>
           <tr><td class="date-col">Current Role</td><td>Software Engineer — Agentic Systems &amp; LLM Platforms (Adobe Brand Concierge), Adobe Inc.</td></tr>
           <tr><td class="date-col">Location</td><td>Santa Clara, CA</td></tr>
-          <tr><td class="date-col">Email</td><td><a class="icon-link icon-only" href="mailto:rrmekala@uci.edu" aria-label="Email rrmekala@uci.edu" title="Email rrmekala@uci.edu"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#mail"/></svg></a></td></tr>
+          <tr><td class="date-col">Email</td><td><a class="icon-link" href="mailto:rrmekala@uci.edu"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#mail"/></svg>rrmekala@uci.edu</a></td></tr>
           <tr><td class="date-col">Languages</td><td>English, Telugu, Hindi</td></tr>
         </tbody>
       </table>
@@ -116,15 +112,15 @@
         Part of the 0&rarr;1 core engineering team for Adobe Brand Concierge (joining one month post-ideation), driving foundational PoCs and technical spikes into production across agent orchestration, grounded retrieval, CPU inference services, and evaluation/optimization infrastructure.
       </div>
       <ul>
-        <li><strong>Agent orchestration:</strong> Built a PydanticAI runtime with declarative manifest compilation and Agent-to-Agent JSON-RPC support.</li>
-        <li><strong>Tool and capability infrastructure:</strong> Added configurable pre/post execution hooks, state capture, and tool error handling.</li>
-        <li><strong>Source attribution:</strong> Integrated remote cross-encoder rerankers with score normalization, token limits, and request batching.</li>
-        <li><strong>Inference services:</strong> Built CPU-based Text Embeddings Inference services on ONNX Runtime for batch reranking.</li>
-        <li><strong>Agent evaluation and optimization:</strong> Integrated GEPA and DSPy into the prompt compilation and evaluation workflow.</li>
-        <li><strong>LLM routing:</strong> Added manifest-driven model profiles for Azure OpenAI, OpenAI, and private enterprise endpoints.</li>
-        <li><strong>Evaluation data:</strong> Developed SQL Server-backed dataset persistence and span-aware trace evaluators.</li>
-        <li><strong>Streaming and traffic control:</strong> Implemented SSE streaming, artifact state replacement, and tenant traffic isolation.</li>
-        <li><strong>Semantic routing cache:</strong> Built a FastEmbed and semantic clustering cache for recurring queries.</li>
+        <li><strong>Agent orchestration:</strong> Replaced multi-hop legacy pipelines with a unified PydanticAI runtime (BCOS) supporting declarative manifest compilation and Agent-to-Agent JSON-RPC protocols.</li>
+        <li><strong>Tool and capability infrastructure:</strong> Designed extensible Pydantic tool schemas with declarative pre/post execution hooks, state capture primitives, and configurable error recovery (<code>ToolErrorPolicy</code>).</li>
+        <li><strong>Source attribution:</strong> Built a factory-based citation engine integrating cross-encoder rerankers (<code>bge-reranker-v2-m3</code>, <code>e5-curriculum</code>) with score normalization, &lt;512-token truncation safeguards, and dynamic batching across enterprise pilots (NVIDIA, Synopsys, ITC, DSG).</li>
+        <li><strong>CPU inference services:</strong> Eliminated Candle batching limits by building CPU-only Text Embeddings Inference (TEI) services on ONNX Runtime with dynamic axes, reranking 30+ candidate passages in a single batch at <strong>588ms&ndash;796ms p50 latency</strong>.</li>
+        <li><strong>Agent evaluation and optimization:</strong> Integrated Genetic-Pareto Prompt Optimization (GEPA) and DSPy into Eval Studio, achieving Pareto-optimal prompt mutations with <strong>35x fewer rollouts</strong> than RL baselines.</li>
+        <li><strong>LLM routing:</strong> Added zero-downtime, manifest-driven runtime model profiles across Azure OpenAI (GPT-4.1 / GPT-4o), OpenAI, and private enterprise endpoints.</li>
+        <li><strong>Evaluation data:</strong> Developed high-throughput SQL Server dataset persistence with chunked staging tables, bulk row ingestion, and span-aware execution trace evaluators.</li>
+        <li><strong>Streaming and traffic control:</strong> Hardened the FastAPI/MongoDB conversation engine with SSE token streaming, artifact state replacement, and multi-tenant sandbox isolation.</li>
+        <li><strong>Semantic routing cache:</strong> Built a standalone FastEmbed (<code>bge-small</code>) and semantic clustering cache over historical logs for sub-millisecond recurring Q&amp;A lookups.</li>
       </ul>
     </div>
 

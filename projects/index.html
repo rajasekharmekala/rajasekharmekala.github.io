@@ -15,7 +15,7 @@
         <div class="topllinks">
           <a href="../index.html">Home</a> |
           <a class="icon-link" href="https://x.com/rajasekhar_732"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#x"/></svg>X (@rajasekhar_732)</a> |
-          <a href="https://rajasekharmekala.github.io/portfolio/">Portfolio Research Desk</a>
+          <a class="icon-link" href="https://github.com/rajasekharmekala"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#github"/></svg>GitHub</a>
         </div>
       </div>
       <div class="logotab">
@@ -39,10 +39,6 @@
         <a href="../publications/">Publications &amp; Patents</a>
         <a href="index.html" class="active">Projects &amp; Systems</a>
         <a href="../repositories/">Repositories</a>
-      </div>
-      <div class="sisnav">
-        <span class="sis-label">Live Desks:</span>
-        <a href="https://rajasekharmekala.github.io/portfolio/">Portfolio Desk</a>
       </div>
     </div>
 
@@ -71,12 +67,12 @@
         0&rarr;1 enterprise agentic application at Adobe. Joined roughly a month after initial ideation and led most foundational PoCs and technical spikes from prototype to production across the multi-tenant agent runtime, grounded neural retrieval/CPU inference, and automated agent optimization.
       </div>
       <ul>
-        <li><strong>Agent Orchestration Engine:</strong> Built the Brand Concierge Operating System (BCOS) with PydanticAI, declarative manifest compilation, and Agent-to-Agent JSON-RPC support.</li>
-        <li><strong>Declarative Tool Framework:</strong> Designed extensible Pydantic tool schemas with declarative pre/post execution hooks, state capture primitives, and configurable <code>ToolErrorPolicy</code> for deterministic runtime recovery.</li>
-        <li><strong>Neural Source Attribution:</strong> Integrated remote cross-encoder rerankers (bge-reranker-v2-m3, e5-curriculum) with score normalization, token limits, and request batching.</li>
-        <li><strong>High-Performance Inference (Lucid Lens):</strong> Built CPU-only Text Embeddings Inference services on ONNX Runtime with dynamic axes for batch reranking of 30+ passages, delivering sub-second p50 latency.</li>
-        <li><strong>Automated Agent Optimization:</strong> Integrated GEPA and DSPy into Eval Studio for reflective prompt compilation.</li>
-        <li><strong>Streaming Serving &amp; Traffic Isolation:</strong> Hardened core FastAPI/MongoDB conversation engine with Server-Sent Events (SSE) token streaming, artifact state replacement (<code>StreamEventProcessor</code>), and sandbox isolation (<code>TrafficControlEnforcer</code>).</li>
+        <li><strong>Unified Agent Orchestration (BCOS):</strong> Replaced multi-hop legacy pipelines with a single PydanticAI agent runtime supporting declarative manifest compilation and Agent-to-Agent (A2A) JSON-RPC protocols.</li>
+        <li><strong>Deterministic Tool &amp; Capability Layer:</strong> Designed extensible Pydantic tool schemas with declarative pre/post execution hooks, state capture primitives, and configurable error-recovery policies (<code>ToolErrorPolicy</code>).</li>
+        <li><strong>Grounded Neural Source Attribution:</strong> Built a factory-based citation engine integrating cross-encoder rerankers (<code>bge-reranker-v2-m3</code>, <code>e5-curriculum</code>) with score normalization, &lt;512-token truncation safeguards, and dynamic batching across enterprise pilots (NVIDIA, Synopsys, ITC, DSG).</li>
+        <li><strong>CPU-Only ONNX Inference (Lucid Lens):</strong> Eliminated Candle batching limits by building CPU Text Embeddings Inference (TEI) services on ONNX Runtime with dynamic axes—reranking 30+ candidate passages in a single batch at <strong>588ms&ndash;796ms p50 latency</strong>.</li>
+        <li><strong>Automated Agent Optimization:</strong> Integrated Genetic-Pareto Prompt Optimization (GEPA) and DSPy into Eval Studio for reflective prompt compilation, achieving Pareto-optimal mutations with <strong>35x fewer rollouts</strong> than RL baselines.</li>
+        <li><strong>Streaming Serving &amp; Multi-Tenant Isolation:</strong> Hardened the FastAPI/MongoDB conversation engine with SSE token streaming, artifact state replacement (<code>StreamEventProcessor</code>), and tenant sandbox isolation (<code>TrafficControlEnforcer</code>), plus a local FastEmbed semantic routing cache for sub-millisecond Q&amp;A lookups.</li>
       </ul>
     </div>
 
