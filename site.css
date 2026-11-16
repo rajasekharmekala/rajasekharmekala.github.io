@@ -296,7 +296,7 @@ a:hover {
   margin-bottom: 0;
 }
 
-/* Sister Portals Grid (links to personal-wiki, portfolio, travel-research) */
+/* Sister Portals Grid (links to personal-wiki, portfolio) */
 .portal-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));

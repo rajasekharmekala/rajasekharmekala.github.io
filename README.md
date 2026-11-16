@@ -14,4 +14,3 @@ Zero-build, static HTML/CSS personal website styled in the unified Techmeme / Mo
 - **Home / Profile:** https://rajasekharmekala.github.io/
 - **X (@rajasekhar_732):** https://x.com/rajasekhar_732
 - **Portfolio Research Desk (IN & US Equities):** https://rajasekharmekala.github.io/portfolio/
-- **Travel Research Desk:** https://rajasekharmekala.github.io/travel-research/
