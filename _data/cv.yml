@@ -34,7 +34,7 @@
       description:
         - title: Core platform engineering for Adobe Brand Concierge, supporting enterprise deployments across semiconductors & hardware, enterprise SaaS, retail, travel & hospitality, and sports/entertainment.
           contents:
-            - Primary creator and builder of the offline and online LLM evaluation and optimization platform (FastAPI, Okta SSO), integrating GEPA reflective prompt and judge optimization, multi-judge correlation diagnostics, guardrail analysis, and offline source-attribution calibration.
+            - Primary Contributor and builder of the offline and online LLM evaluation and optimization platform (FastAPI, Okta SSO), integrating GEPA reflective prompt and judge optimization, multi-judge correlation diagnostics, guardrail analysis, and offline source-attribution calibration.
             - Engineered durable SQL Server dataset persistence with chunked staging tables, bulk row ingestion, and paginated retrieval scaling up to 50,000-answer datasets alongside replay evaluation runners.
             - Co-built the foundational FastAPI/MongoDB conversation runtime from day one, including conversation APIs, session-store facades, SSE streaming contracts, A2A streaming client integration, tenant traffic/sandbox isolation, and web-traffic/engagement analytics ingestion.
             - Built the Pydantic tool configuration hierarchy with declarative pre/post execution hooks, state capture primitives, configurable error-recovery policies, and MCP tool integration in the successor PydanticAI runtime.

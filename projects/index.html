@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects &amp; Systems — Rajasekhar Reddy Mekala</title>
-  <meta name="description" content="Production LLM evaluation and optimization platforms, multi-tenant agent runtime subsystems, ONNX neural retrieval, and NLP research systems built by Rajasekhar Reddy Mekala.">
+  <meta name="description"
+    content="Production LLM evaluation and optimization platforms, multi-tenant agent runtime subsystems, ONNX neural retrieval, and NLP research systems built by Rajasekhar Reddy Mekala.">
   <link rel="stylesheet" href="../site.css">
 </head>
+
 <body id="top">
   <div class="page-container">
     <div class="prenavbar">
@@ -14,8 +17,12 @@
         <div>Projects, Production AI Systems &amp; Research Prototypes</div>
         <div class="topllinks">
           <a href="../index.html">Home</a> |
-          <a class="icon-link" href="https://x.com/rajasekhar_732"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#x"/></svg>X (@rajasekhar_732)</a> |
-          <a class="icon-link" href="https://github.com/rajasekharmekala"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#github"/></svg>GitHub</a>
+          <a class="icon-link" href="https://x.com/rajasekhar_732"><svg class="link-icon" aria-hidden="true">
+              <use href="/assets/icons.svg#x" />
+            </svg>X (@rajasekhar_732)</a> |
+          <a class="icon-link" href="https://github.com/rajasekharmekala"><svg class="link-icon" aria-hidden="true">
+              <use href="/assets/icons.svg#github" />
+            </svg>GitHub</a>
         </div>
       </div>
       <div class="logotab">
@@ -27,7 +34,10 @@
         </div>
         <div class="quick-links">
           <a class="pill-link" href="../repositories/">Open-Source Repositories</a>
-          <a class="pill-link icon-link" href="https://github.com/rajasekharmekala"><svg class="link-icon" aria-hidden="true"><use href="/assets/icons.svg#github"/></svg>GitHub Profile</a>
+          <a class="pill-link icon-link" href="https://github.com/rajasekharmekala"><svg class="link-icon"
+              aria-hidden="true">
+              <use href="/assets/icons.svg#github" />
+            </svg>GitHub Profile</a>
         </div>
       </div>
     </div>
@@ -61,32 +71,51 @@
     <div class="deepdive-container">
       <div class="deepdive-head">
         <h3 class="deepdive-title">Adobe Brand Concierge — LLM Agent Evaluation &amp; Optimization Platform</h3>
-        <span class="deepdive-meta">Adobe Inc. &bull; Primary Creator</span>
+        <span class="deepdive-meta">Adobe Inc. &bull; Primary Contributor</span>
       </div>
       <div class="deepdive-keypts">
-        Designed and built the evaluation and prompt-optimization platform supporting enterprise deployments across semiconductors &amp; hardware, enterprise SaaS, retail, travel &amp; hospitality, and sports/entertainment.
+        Designed and built the evaluation and prompt-optimization platform supporting enterprise deployments across
+        semiconductors &amp; hardware, enterprise SaaS, retail, travel &amp; hospitality, and sports/entertainment.
       </div>
       <ul>
-        <li><strong>Evaluation &amp; Optimization Engine:</strong> Built the FastAPI service and workflow orchestration supporting offline experiment runs, online span evaluation, knowledge-base diagnostics, and Okta-authenticated multi-tenant workflows.</li>
-        <li><strong>GEPA Reflective Prompt &amp; Judge Optimization:</strong> Integrated Genetic-Pareto Prompt Optimization (GEPA) with multi-profile reasoning models, reflection loops, tunable multi-judge rubrics, and a Judge Correlation Matrix.</li>
-        <li><strong>Durable Staged Persistence:</strong> Engineered chunked SQL Server staging tables, bulk row ingestion, paginated retrieval, and replay diagnostics scaling up to 50,000-answer evaluation datasets.</li>
-        <li><strong>Grounding &amp; Guardrail Diagnostics:</strong> Built offline source-attribution calibration and guardrail analysis views to compare assistant variants and inspect execution traces end-to-end.</li>
+        <li><strong>Evaluation &amp; Optimization Engine:</strong> Built the FastAPI service and workflow orchestration
+          supporting offline experiment runs, online span evaluation, knowledge-base diagnostics, and Okta-authenticated
+          multi-tenant workflows.</li>
+        <li><strong>GEPA Reflective Prompt &amp; Judge Optimization:</strong> Integrated Genetic-Pareto Prompt
+          Optimization (GEPA) with multi-profile reasoning models, reflection loops, tunable multi-judge rubrics, and a
+          Judge Correlation Matrix.</li>
+        <li><strong>Durable Staged Persistence:</strong> Engineered chunked SQL Server staging tables, bulk row
+          ingestion, paginated retrieval, and replay diagnostics scaling up to 50,000-answer evaluation datasets.</li>
+        <li><strong>Grounding &amp; Guardrail Diagnostics:</strong> Built offline source-attribution calibration and
+          guardrail analysis views to compare assistant variants and inspect execution traces end-to-end.</li>
       </ul>
     </div>
 
     <div class="deepdive-container">
       <div class="deepdive-head">
-        <h3 class="deepdive-title">Adobe Brand Concierge — Agent Runtime, Attribution &amp; ONNX Retrieval Subsystems</h3>
+        <h3 class="deepdive-title">Adobe Brand Concierge — Agent Runtime, Attribution &amp; ONNX Retrieval Subsystems
+        </h3>
         <span class="deepdive-meta">Adobe Inc. &bull; Core Engineering Team</span>
       </div>
       <div class="deepdive-keypts">
-        Built foundational conversation-service infrastructure from initial prototypes through production and contributed core runtime, citation, safety, and ONNX serving subsystems to the successor PydanticAI platform.
+        Built foundational conversation-service infrastructure from initial prototypes through production and
+        contributed core runtime, citation, safety, and ONNX serving subsystems to the successor PydanticAI platform.
       </div>
       <ul>
-        <li><strong>Foundational Conversation Service:</strong> Co-built the initial FastAPI/MongoDB conversation runtime from day one—implementing conversation APIs, session-store facades, SSE streaming contracts, A2A streaming client integration, tenant traffic/sandbox isolation, and web-traffic/engagement analytics ingestion.</li>
-        <li><strong>Declarative Tooling &amp; LLM Profile Routing:</strong> Built the Pydantic tool configuration hierarchy with declarative pre/post hooks, state capture primitives, configurable error-recovery policies, MCP integration, and manifest-driven named LLM profile routing across Azure OpenAI, OpenAI, and private enterprise endpoints.</li>
-        <li><strong>Document-First Citation Attribution &amp; Guardrails:</strong> Implemented the document-first LLM citation pipeline and remote source-attribution integration with cross-turn citation tracking, multi-layered preflight decision guardrails, tool-graph-aware system skills, and structured trace schemas.</li>
-        <li><strong>CPU ONNX Retrieval Serving:</strong> Extended the Hugging Face Text Embeddings Inference (TEI) / ONNX Runtime stack with INT8 quantization pipelines, custom E5 cross-encoder and two-stage embedding targets, and a FastAPI multi-query batch reranking proxy.</li>
+        <li><strong>Foundational Conversation Service:</strong> Co-built the initial FastAPI/MongoDB conversation
+          runtime from day one—implementing conversation APIs, session-store facades, SSE streaming contracts, A2A
+          streaming client integration, tenant traffic/sandbox isolation, and web-traffic/engagement analytics
+          ingestion.</li>
+        <li><strong>Declarative Tooling &amp; LLM Profile Routing:</strong> Built the Pydantic tool configuration
+          hierarchy with declarative pre/post hooks, state capture primitives, configurable error-recovery policies, MCP
+          integration, and manifest-driven named LLM profile routing across Azure OpenAI, OpenAI, and private enterprise
+          endpoints.</li>
+        <li><strong>Document-First Citation Attribution &amp; Guardrails:</strong> Implemented the document-first LLM
+          citation pipeline and remote source-attribution integration with cross-turn citation tracking, multi-layered
+          preflight decision guardrails, tool-graph-aware system skills, and structured trace schemas.</li>
+        <li><strong>CPU ONNX Retrieval Serving:</strong> Extended the Hugging Face Text Embeddings Inference (TEI) /
+          ONNX Runtime stack with INT8 quantization pipelines, custom E5 cross-encoder and two-stage embedding targets,
+          and a FastAPI multi-query batch reranking proxy.</li>
       </ul>
     </div>
 
@@ -97,16 +126,22 @@
 
     <div class="deepdive-container">
       <div class="deepdive-head">
-        <h3 class="deepdive-title"><a href="https://arxiv.org/abs/2309.10687">EchoPrompt (NAACL 2024) — Instructing the Model to Rephrase Queries for Improved In-Context Learning and Chain-of-Thought Reasoning</a></h3>
+        <h3 class="deepdive-title"><a href="https://arxiv.org/abs/2309.10687">EchoPrompt (NAACL 2024) — Instructing the
+            Model to Rephrase Queries for Improved In-Context Learning and Chain-of-Thought Reasoning</a></h3>
         <span class="deepdive-meta">UC Irvine NLP Lab &bull; Importance: 2</span>
       </div>
       <div class="deepdive-keypts">
-        <strong>EchoPrompt</strong> is a simple yet effective approach that prompts language models to rephrase their queries before answering them. Published in <em>Findings of NAACL 2024</em> with Yasaman Razeghi and Dr. Sameer Singh at UC Irvine.
+        <strong>EchoPrompt</strong> is a simple yet effective approach that prompts language models to rephrase their
+        queries before answering them. Published in <em>Findings of NAACL 2024</em> with Yasaman Razeghi and Dr. Sameer
+        Singh at UC Irvine.
       </div>
       <ul>
-        <li>Evaluated across four causal language model families on numerical reasoning (GSM8K, SVAMP), reading comprehension (DROP), and logical reasoning tasks.</li>
-        <li>Improves Zero-Shot-CoT accuracy on <code>code-davinci-002</code> by 5% on numerical reasoning and 13% on reading comprehension.</li>
-        <li>Demonstrates that both the original query and the model-generated rephrased version provide complementary semantic signals that stabilize in-context learning.</li>
+        <li>Evaluated across four causal language model families on numerical reasoning (GSM8K, SVAMP), reading
+          comprehension (DROP), and logical reasoning tasks.</li>
+        <li>Improves Zero-Shot-CoT accuracy on <code>code-davinci-002</code> by 5% on numerical reasoning and 13% on
+          reading comprehension.</li>
+        <li>Demonstrates that both the original query and the model-generated rephrased version provide complementary
+          semantic signals that stabilize in-context learning.</li>
       </ul>
       <div class="pub-actions">
         <a class="pub-btn" href="https://arxiv.org/abs/2309.10687">arXiv:2309.10687</a>
@@ -119,9 +154,11 @@
         <div>
           <img class="project-thumb" src="../assets/img/code-screenshot.png" alt="SNOOPY Interface">
           <div class="portal-card-kicker">NLP System Demo &bull; EMNLP 2022</div>
-          <div class="portal-card-title"><a href="https://aclanthology.org/2022.emnlp-demos.39">SNOOPY — Pretraining Term Frequency Explorer</a></div>
+          <div class="portal-card-title"><a href="https://aclanthology.org/2022.emnlp-demos.39">SNOOPY — Pretraining
+              Term Frequency Explorer</a></div>
           <p class="portal-card-desc">
-            Online visual interface for exploring the effect of pretraining term frequencies (The Pile) on few-shot language model performance across GPT-Neo, GPT-J, OPT, and BLOOM.
+            Online visual interface for exploring the effect of pretraining term frequencies (The Pile) on few-shot
+            language model performance across GPT-Neo, GPT-J, OPT, and BLOOM.
           </p>
         </div>
         <div class="portal-card-foot">
@@ -131,8 +168,10 @@
     </div>
 
     <div class="footer">
-      &copy; 2026 Rajasekhar Reddy Mekala &bull; <a href="../index.html">Home</a> &bull; <a href="#top">Back to Top &uarr;</a>
+      &copy; 2026 Rajasekhar Reddy Mekala &bull; <a href="../index.html">Home</a> &bull; <a href="#top">Back to Top
+        &uarr;</a>
     </div>
   </div>
 </body>
+
 </html>
