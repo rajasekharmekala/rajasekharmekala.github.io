@@ -69,7 +69,7 @@
         - Developed EchoPrompt, instructing models to rephrase queries prior to reasoning, substantially improving few-shot arithmetic and logical reasoning performance across LLMs (Published at NAACL / ARR).
         - Co-developed Snoopy, an interactive diagnostic framework exploring the causal impact of pretraining term frequencies on few-shot language model outputs (Published at EMNLP 2022).
 
-    - title: Software Engineer I - II
+    - title: Software Engineer II
       institution: Adobe, Noida, India
       year: Jul 2018 - Aug 2021
       description:
