@@ -30,11 +30,11 @@
   contents:
     - title: Software Engineer — Agentic Systems & LLM Platforms (Adobe Brand Concierge)
       institution: Adobe, Santa Clara, CA
-      year: Jun 2023 - Present
+      year: Late 2024 - Present
       description:
-        - title: Core platform engineering for Adobe Brand Concierge (following earlier work on Adobe Journey Optimizer), supporting enterprise deployments across semiconductors & hardware, enterprise SaaS, retail, travel & hospitality, and sports/entertainment.
+        - title: Core platform engineering for Adobe Brand Concierge, supporting enterprise deployments across semiconductors & hardware, enterprise SaaS, retail, travel & hospitality, and sports/entertainment.
           contents:
-            - Primary creator and builder of the end-to-end LLM evaluation and optimization platform (FastAPI, React, Okta SSO), integrating GEPA reflective prompt and judge optimization, multi-judge correlation diagnostics, guardrail analysis, and offline source-attribution calibration.
+            - Primary creator and builder of the offline and online LLM evaluation and optimization platform (FastAPI, Okta SSO), integrating GEPA reflective prompt and judge optimization, multi-judge correlation diagnostics, guardrail analysis, and offline source-attribution calibration.
             - Engineered durable SQL Server dataset persistence with chunked staging tables, bulk row ingestion, and paginated retrieval scaling up to 50,000-answer datasets alongside replay evaluation runners.
             - Co-built the foundational FastAPI/MongoDB conversation runtime from day one, including conversation APIs, session-store facades, SSE streaming contracts, A2A streaming client integration, tenant traffic/sandbox isolation, and web-traffic/engagement analytics ingestion.
             - Built the Pydantic tool configuration hierarchy with declarative pre/post execution hooks, state capture primitives, configurable error-recovery policies, and MCP tool integration in the successor PydanticAI runtime.
@@ -42,6 +42,16 @@
             - Implemented the document-first LLM citation pipeline and remote source-attribution integration with cross-turn citation tracking, multi-layered preflight decision guardrails, tool-graph-aware system skills, and structured execution trace contracts.
             - Extended the CPU Text Embeddings Inference (TEI) / ONNX Runtime stack with INT8 quantization pipelines, custom E5 cross-encoder and two-stage embedding build targets, and a FastAPI multi-query batch reranking proxy.
             - Contributed to early Brand Concierge web crawling and LLM-as-a-judge evaluation services.
+
+    - title: Software Engineer — Adobe Journey Optimizer (AJO)
+      institution: Adobe, Santa Clara, CA
+      year: Jun 2023 - Nov 2024
+      description:
+        - title: Backend engineering, production runtime operations, and architectural design for Adobe Journey Optimizer authoring and execution systems.
+          contents:
+            - Built Java authoring and validation APIs for Campaign/Journey Conflict Detection, integrating Accelerated Query Service (AQS) audience-overlap scoring, OLAC-aware campaign caching, and channel, ruleset, and business-event filtering.
+            - Handled production on-call, infrastructure debugging, and scaling for the AJO journey runtime; contributed technical proposals for message/journey prioritization features and runtime SDK integration for inbound channels (code-based experiences and content cards).
+            - Implemented merge-policy lifecycle handling across draft, live, and duplicated journey versions and asynchronous test-mode execution endpoints.
 
     - title: Software Engineer
       institution: TruckX, Sunnyvale, CA
@@ -73,7 +83,7 @@
       year: May 2017 - Jul 2017
       description:
         - Built an ML framework on Apache Spark/Hadoop (AWS) to detect and mitigate multi-tenant noisy-neighbor performance degradation in shared cloud infrastructure.
-        - Won the Best Intern Project Award (Ranked 1st among 23 research projects) and co-authored US Patent US20190354388.
+        - Won the Best Intern Project Award (Ranked 1st among 23 research projects) and co-authored granted US Patent US11086646B2.
 
 - title: Publications & Patents
   type: time_table
@@ -82,8 +92,8 @@
       items: "NAACL 2024: EchoPrompt: Instructing the Model to Rephrase Queries for Improved In-context Learning. Rajasekhar Reddy Mekala, Yasaman Razeghi, Sameer Singh."
     - year: 2022
       items: "EMNLP 2022: Snoopy: An Online Interface for Exploring Pretraining Term Frequencies on Few-Shot LM Performance. Yasaman Razeghi*, Rajasekhar Mekala*, Robert Logan, Matt Gardner, Sameer Singh."
-    - year: 2019
-      items: "US Patent US20190354388: Tenant-side detection, classification, and mitigation of noisy-neighbor induced performance degradation. S. Mitra, S. Khosla, S. Mehta, M. R. S. Reddy, A. D. Shah."
+    - year: 2021
+      items: "Granted US Patent US11086646B2: Tenant-side detection, classification, and mitigation of noisy-neighbor induced performance degradation. S. Mitra, S. Khosla, S. Mehta, M. R. S. Reddy, A. D. Shah."
 
 - title: Teaching
   type: time_table
