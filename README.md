@@ -7,7 +7,6 @@ Zero-build, static HTML/CSS personal website (`site.css`).
 - `cv/index.html`: Complete Curriculum Vitae (Education, Adobe & UC Irvine Experience, Publications, Patents, Teaching, Honors & Awards, and Skills).
 - `publications/index.html`: Publications and US patent record with abstracts and BibTeX.
 - `projects/index.html`: Production AI systems (`Adobe Brand Concierge` evaluation platform, agent runtime, and ONNX retrieval subsystems) and NLP research systems (`EchoPrompt`, `SNOOPY`).
-- `repositories/index.html`: Open-source LLM/NLP repositories and website source.
 - `assets/pdf/` & `assets/img/`: CV PDF and project/profile images.
 
 ## Related Links
