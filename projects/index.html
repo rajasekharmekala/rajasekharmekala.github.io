@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects &amp; Systems — Rajasekhar Reddy Mekala</title>
-  <meta name="description" content="Production LLM agent platforms, neural retrieval infrastructure, and NLP research systems built by Rajasekhar Reddy Mekala (Adobe Brand Concierge BCOS, EchoPrompt, SNOOPY).">
+  <meta name="description" content="Production LLM evaluation and optimization platforms, multi-tenant agent runtime subsystems, ONNX neural retrieval, and NLP research systems built by Rajasekhar Reddy Mekala.">
   <link rel="stylesheet" href="../site.css">
 </head>
 <body id="top">
@@ -60,19 +60,33 @@
 
     <div class="deepdive-container">
       <div class="deepdive-head">
-        <h3 class="deepdive-title">Brand Concierge (BCOS) — Enterprise Multi-Tenant LLM Agent Orchestrator, Grounded Neural Retrieval &amp; Automated Program Optimization at Adobe</h3>
-        <span class="deepdive-meta">Adobe Inc. &bull; Importance: 1</span>
+        <h3 class="deepdive-title">Adobe Brand Concierge — LLM Agent Evaluation &amp; Optimization Platform</h3>
+        <span class="deepdive-meta">Adobe Inc. &bull; Primary Creator</span>
       </div>
       <div class="deepdive-keypts">
-        0&rarr;1 enterprise agentic application at Adobe. Joined roughly a month after initial ideation and led most foundational PoCs and technical spikes from prototype to production across the multi-tenant agent runtime, grounded neural retrieval/CPU inference, and automated agent optimization.
+        Designed and built the full-stack evaluation and prompt-optimization platform supporting enterprise deployments across semiconductors &amp; hardware, enterprise SaaS, retail, travel &amp; hospitality, and sports/entertainment.
       </div>
       <ul>
-        <li><strong>Unified Agent Orchestration (BCOS):</strong> Replaced multi-hop legacy pipelines with a single PydanticAI agent runtime supporting declarative manifest compilation and Agent-to-Agent (A2A) JSON-RPC protocols.</li>
-        <li><strong>Deterministic Tool &amp; Capability Layer:</strong> Designed extensible Pydantic tool schemas with declarative pre/post execution hooks, state capture primitives, and configurable error-recovery policies (<code>ToolErrorPolicy</code>).</li>
-        <li><strong>Grounded Neural Source Attribution:</strong> Built a factory-based citation engine integrating cross-encoder rerankers (<code>bge-reranker-v2-m3</code>, <code>e5-curriculum</code>) with score normalization, &lt;512-token truncation safeguards, and dynamic batching across enterprise pilots (NVIDIA, Synopsys, ITC, DSG).</li>
-        <li><strong>CPU-Only ONNX Inference (Lucid Lens):</strong> Eliminated Candle batching limits by building CPU Text Embeddings Inference (TEI) services on ONNX Runtime with dynamic axes—reranking 30+ candidate passages in a single batch at <strong>588ms&ndash;796ms p50 latency</strong>.</li>
-        <li><strong>Automated Agent Optimization:</strong> Integrated Genetic-Pareto Prompt Optimization (GEPA) and DSPy into Eval Studio for reflective prompt compilation, achieving Pareto-optimal mutations with <strong>35x fewer rollouts</strong> than RL baselines.</li>
-        <li><strong>Streaming Serving &amp; Multi-Tenant Isolation:</strong> Hardened the FastAPI/MongoDB conversation engine with SSE token streaming, artifact state replacement (<code>StreamEventProcessor</code>), and tenant sandbox isolation (<code>TrafficControlEnforcer</code>), plus a local FastEmbed semantic routing cache for sub-millisecond Q&amp;A lookups.</li>
+        <li><strong>Full-Stack Evaluation Studio:</strong> Built the FastAPI backend and React operator UI supporting offline experiment runs, online span evaluation, knowledge-base exploration, and Okta-authenticated multi-tenant workflows.</li>
+        <li><strong>GEPA Reflective Prompt &amp; Judge Optimization:</strong> Integrated Genetic-Pareto Prompt Optimization (GEPA) with multi-profile reasoning models, reflection loops, tunable multi-judge rubrics, and a Judge Correlation Matrix.</li>
+        <li><strong>Durable Staged Persistence:</strong> Engineered chunked SQL Server staging tables, bulk row ingestion, paginated retrieval, and replay diagnostics scaling up to 50,000-answer evaluation datasets.</li>
+        <li><strong>Grounding &amp; Guardrail Diagnostics:</strong> Built offline source-attribution calibration and guardrail analysis views to compare assistant variants and inspect execution traces end-to-end.</li>
+      </ul>
+    </div>
+
+    <div class="deepdive-container">
+      <div class="deepdive-head">
+        <h3 class="deepdive-title">Adobe Brand Concierge — Agent Runtime, Attribution &amp; ONNX Retrieval Subsystems</h3>
+        <span class="deepdive-meta">Adobe Inc. &bull; Core Engineering Team</span>
+      </div>
+      <div class="deepdive-keypts">
+        Built foundational conversation-service infrastructure from initial prototypes through production and contributed core runtime, citation, safety, and ONNX serving subsystems to the successor PydanticAI platform.
+      </div>
+      <ul>
+        <li><strong>Foundational Conversation Service:</strong> Co-built the initial FastAPI/MongoDB conversation runtime from day one—implementing conversation APIs, session-store facades, SSE streaming contracts, A2A streaming client integration, tenant traffic/sandbox isolation, and web-traffic/engagement analytics ingestion.</li>
+        <li><strong>Declarative Tooling &amp; LLM Profile Routing:</strong> Built the Pydantic tool configuration hierarchy with declarative pre/post hooks, state capture primitives, configurable error-recovery policies, MCP integration, and manifest-driven named LLM profile routing across Azure OpenAI, OpenAI, and private enterprise endpoints.</li>
+        <li><strong>Document-First Citation Attribution &amp; Guardrails:</strong> Implemented the document-first LLM citation pipeline and remote source-attribution integration with cross-turn citation tracking, multi-layered preflight decision guardrails, tool-graph-aware system skills, and structured trace schemas.</li>
+        <li><strong>CPU ONNX Retrieval Serving:</strong> Extended the Hugging Face Text Embeddings Inference (TEI) / ONNX Runtime stack with INT8 quantization pipelines, custom E5 cross-encoder and two-stage embedding targets, and a FastAPI multi-query batch reranking proxy.</li>
       </ul>
     </div>
 

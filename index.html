@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rajasekhar Reddy Mekala — Agentic Systems &amp; LLM Platforms (Adobe Brand Concierge) | MS CS UC Irvine | IIT Kharagpur</title>
-  <meta name="description" content="Rajasekhar Reddy Mekala: Software & ML Systems Engineer building Adobe Brand Concierge (0-to-1 agentic systems, LLM platforms, and neural retrieval), MS CS UC Irvine, B.Tech IIT Kharagpur.">
+  <meta name="description" content="Rajasekhar Reddy Mekala: Software Engineer building Agentic Systems & LLM Platforms for Adobe Brand Concierge (evaluation/optimization, multi-tenant runtimes, and neural retrieval), MS CS UC Irvine, B.Tech IIT Kharagpur.">
   <link rel="stylesheet" href="site.css">
 </head>
 <body id="top">
@@ -23,7 +23,7 @@
         <div>
           <a href="index.html" class="logo-link">
             <div class="logo-title">Rajasekhar Reddy Mekala</div>
-            <div class="logo-subtitle">Agentic Systems &amp; LLM Platforms &bull; Adobe Brand Concierge &bull; <a href="https://uci.edu/">MS CS UC Irvine</a> &bull; <a href="http://www.iitkgp.ac.in/">IIT Kharagpur</a></div>
+            <div class="logo-subtitle">Agentic Systems &amp; LLM Platforms &bull; <a href="https://business.adobe.com/products/brand-concierge.html">Adobe Brand Concierge</a> &bull; <a href="https://uci.edu/">MS CS UC Irvine</a> &bull; <a href="http://www.iitkgp.ac.in/">IIT Kharagpur</a></div>
           </a>
         </div>
         <div class="quick-links">
@@ -51,7 +51,7 @@
       <div>
         Jump to:
         <a href="#featured-systems">Agentic &amp; AI Systems</a> &bull;
-        <a href="#selected-publications">Publications, Patents &amp; Disclosures</a> &bull;
+        <a href="#selected-publications">Publications &amp; Patent</a> &bull;
         <a href="#pillars">Core Pillars</a>
       </div>
       <div>
@@ -63,7 +63,7 @@
     <!-- Executive Focus Banner -->
     <div class="exec-theme-box">
       <span class="exec-label">Current Focus:</span>
-      0&rarr;1 engineering of multi-tenant LLM agent runtimes (<strong>Adobe Brand Concierge / BCOS</strong>), sub-second CPU neural retrieval &amp; source attribution (<strong>Lucid Lens</strong>), and automated agent optimization (<strong>GEPA &amp; DSPy in Eval Studio</strong>).
+      Building LLM agent evaluation &amp; optimization platforms, multi-tenant serving runtimes, grounded citation pipelines, and CPU ONNX retrieval services for <strong>Adobe Brand Concierge</strong>.
     </div>
 
     <!-- Main Two-Column Techmeme Layout -->
@@ -81,7 +81,7 @@
             <div class="addr">Santa Clara, California</div>
           </div>
           <p>
-            I am a Software Engineer specializing in <strong>Agentic Systems &amp; LLM Platforms</strong> at <strong>Adobe</strong> (Santa Clara, CA) on the 0&rarr;1 core engineering team building <strong>Adobe Brand Concierge</strong> (and previously Adobe Journey Optimizer). Joining roughly a month after initial product ideation, I have driven many of the foundational PoCs and technical spikes from prototype into production—spanning multi-tenant agent orchestration (PydanticAI, Model Context Protocol, A2A), grounded RAG with sub-second CPU neural cross-encoder rerankers, automated prompt and program optimization (GEPA, DSPy), and high-throughput streaming serving infrastructure.
+            I am a Software Engineer specializing in <strong>Agentic Systems &amp; LLM Platforms</strong> at <strong>Adobe</strong> (Santa Clara, CA) on the core engineering team building <a href="https://business.adobe.com/products/brand-concierge.html"><strong>Adobe Brand Concierge</strong></a> (after earlier work on Adobe Journey Optimizer). Joining roughly a month after initial product ideation, I have helped take the platform from early prototypes through enterprise production deployments across semiconductors &amp; hardware, enterprise SaaS, retail &amp; e-commerce, travel &amp; hospitality, and sports &amp; entertainment—serving as primary creator of its LLM evaluation &amp; optimization platform and building core subsystems across the conversation runtime, grounded citation pipeline, guardrails, and ONNX retrieval services.
           </p>
           <p>
             Previously, I earned my M.S. in Computer Science at <a href="https://uci.edu/">UC Irvine</a> (UCI NLP Lab with <a href="https://sameersingh.org/">Dr. Sameer Singh</a>), researching in-context learning, prompt robustness, and chain-of-thought reasoning in LLMs (published at <strong>NAACL 2024</strong> and <strong>EMNLP 2022</strong>), following a B.Tech at <a href="http://www.iitkgp.ac.in/">IIT Kharagpur</a>. Earlier, I built distributed telemetry microservices at <a href="https://truckx.com/">TruckX</a>, search and analytics systems at Adobe (2018&ndash;2021), and cloud performance models at Adobe Research, co-authoring US Patent US20190354388.
@@ -96,22 +96,22 @@
 
         <div class="deepdive-container">
           <div class="deepdive-head">
-            <h3 class="deepdive-title">Adobe Brand Concierge (BCOS) — 0&rarr;1 Multi-Tenant Agent Platform &amp; Retrieval Infrastructure</h3>
+            <h3 class="deepdive-title">Adobe Brand Concierge — Agentic Platform, Evaluation &amp; Retrieval Systems</h3>
             <span class="deepdive-meta">Adobe Inc. &bull; 2023&ndash;Present</span>
           </div>
-          <div class="deepdive-sub">PydanticAI &bull; Model Context Protocol &bull; ONNX Neural Retrieval &bull; GEPA / DSPy</div>
-          <div class="deepdive-keypts">Core 0&rarr;1 engineering from early PoCs and spikes through enterprise production pilots (NVIDIA, Synopsys, ITC, DSG).</div>
+          <div class="deepdive-sub">PydanticAI &bull; Model Context Protocol &bull; GEPA Optimization &bull; ONNX Neural Retrieval</div>
+          <div class="deepdive-keypts">Core platform engineering supporting global enterprise deployments across semiconductors, enterprise SaaS, retail, travel &amp; hospitality, and sports/entertainment.</div>
           <ul>
-            <li><strong>Unified Multi-Tenant Agent Runtime:</strong> Replaced multi-hop legacy pipelines with a single PydanticAI agent runtime (BCOS) supporting declarative manifest compilation, A2A JSON-RPC, deterministic tool error recovery (<code>ToolErrorPolicy</code>), SSE token streaming, and tenant/sandbox traffic isolation.</li>
-            <li><strong>Sub-Second CPU Neural Retrieval:</strong> Eliminated Candle batching limits by building CPU-only ONNX Runtime Text Embeddings Inference (TEI) services with dynamic axes—reranking 30+ candidate passages in a single batch at <strong>588ms&ndash;796ms p50 latency</strong> alongside cross-encoder citation attribution (<code>bge-reranker-v2-m3</code>, <code>e5-curriculum</code>).</li>
-            <li><strong>Automated Agent Optimization &amp; Caching:</strong> Integrated GEPA and DSPy into Eval Studio for Pareto-optimal prompt compilation with <strong>35x fewer rollouts</strong> than RL baselines, built a local FastEmbed semantic Q&amp;A routing cache for sub-millisecond lookups, and filed three Adobe invention disclosures.</li>
+            <li><strong>Agent Evaluation &amp; Optimization Platform (Primary Creator):</strong> Built the end-to-end offline and online evaluation studio (FastAPI, React, durable MSSQL staged store scaling to 50k-answer datasets, Okta SSO), integrating GEPA reflective prompt &amp; judge optimization, multi-judge correlation diagnostics, guardrail analysis, offline source-attribution calibration, and replay evaluation runners.</li>
+            <li><strong>Conversation &amp; Agent Runtime Subsystems:</strong> Co-built the foundational conversation service from day one (FastAPI/MongoDB session &amp; resource persistence, SSE streaming, A2A streaming client integration, tenant traffic/sandbox isolation, web-traffic analytics ingestion, and enterprise pilot integrations), and built declarative Pydantic/MCP tool schemas with pre/post hooks and configurable error-recovery policies, manifest-driven named LLM profile routing, document-first citation attribution, multi-layered preflight guardrails, and structured trace contracts in the successor PydanticAI runtime.</li>
+            <li><strong>CPU ONNX Retrieval &amp; Reranking Infrastructure:</strong> Extended the CPU Text Embeddings Inference (TEI) / ONNX Runtime serving stack with INT8 quantization pipelines, custom E5 cross-encoder and two-stage embedding build targets, and a FastAPI multi-query batch reranking gateway.</li>
           </ul>
         </div>
 
         <!-- Selected Publications & Patents -->
         <div class="section-header" id="selected-publications">
-          <span>Selected Publications, Patents &amp; Invention Disclosures</span>
-          <span class="section-header-sub"><a href="publications/">View Publications &amp; Disclosures &rarr;</a></span>
+          <span>Selected Publications &amp; Patent</span>
+          <span class="section-header-sub"><a href="publications/">All Publications &amp; Patent &rarr;</a></span>
         </div>
 
         <div class="deepdive-container">
@@ -181,15 +181,6 @@
             </div>
           </div>
 
-          <div class="pub-item">
-            <div><span class="badge badge-patent">Adobe Brand Concierge Invention Disclosures</span></div>
-            <ul>
-              <li>Demand-paged agent context with revocable tool capabilities</li>
-              <li>Evidence-linked causal evolution of typed agent manifests</li>
-              <li>Anti-collusion dual optimization for judges and agents</li>
-            </ul>
-            <div class="pub-authors"><strong>Rajasekhar Reddy Mekala</strong> (Adobe Inc.)</div>
-          </div>
 
           <div class="pub-item">
             <div>
@@ -214,9 +205,9 @@
         </div>
         <div class="side-box">
           <ul class="side-list">
-            <li><strong>Agent Runtimes &amp; Protocols:</strong> Multi-tenant orchestration, PydanticAI, MCP, A2A JSON-RPC, declarative tool policies, and SSE streaming.</li>
-            <li><strong>Neural Retrieval &amp; Inference:</strong> Grounded source attribution, cross-encoder rerankers, and low-latency CPU ONNX Runtime serving.</li>
-            <li><strong>LLM Evaluation &amp; Optimization:</strong> Reflective prompt/program compilation (GEPA, DSPy), in-context learning, and anti-collusion judge design.</li>
+            <li><strong>Agent Runtimes &amp; Protocols:</strong> Multi-tenant orchestration, PydanticAI, MCP, declarative tool/hook policies, named LLM profile routing, and SSE streaming.</li>
+            <li><strong>Evaluation &amp; Optimization:</strong> End-to-end LLM evaluation &amp; optimization platform architecture, GEPA reflective prompt &amp; judge optimization, multi-judge correlation, and replay diagnostics.</li>
+            <li><strong>Grounded Retrieval &amp; Safety:</strong> Document-first citation attribution, preflight decision guardrails, cross-encoder rerankers, and INT8 CPU ONNX Runtime serving.</li>
           </ul>
         </div>
 
@@ -238,11 +229,11 @@
             <li><strong>M.S. in Computer Science</strong>, UC Irvine (2021&ndash;2023) &bull; GPA: 3.94/4.00</li>
             <li><strong>B.Tech in Electrical Engg. (CS Minor)</strong>, IIT Kharagpur (2014&ndash;2018) &bull; GPA: 9.04/10.00</li>
           </ul>
-          <h3 style="margin-top: 12px;">Selected Honors &amp; IP</h3>
+          <h3 style="margin-top: 12px;">Selected Honors &amp; Patent</h3>
           <ul class="side-list">
-            <li><strong>3 Adobe Invention Disclosures</strong> (Agent Context, Typed Manifests, Anti-Collusion)</li>
             <li><strong>US Patent US20190354388A1</strong> (Cloud Performance Mitigation)</li>
             <li><strong>Adobe Spot Award (2021)</strong> &amp; <strong>Special Contribution Award (2020)</strong></li>
+            <li><strong>Best Intern Project Award (2017)</strong>, Adobe Research</li>
           </ul>
           <div style="margin-top: 10px; text-align: right;">
             <a href="cv/"><strong>Full Curriculum Vitae &rarr;</strong></a>

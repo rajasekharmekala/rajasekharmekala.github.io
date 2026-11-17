@@ -109,18 +109,17 @@
         <span class="deepdive-meta">Jun 2023 &ndash; Present &bull; Santa Clara, CA</span>
       </div>
       <div class="deepdive-keypts">
-        Part of the 0&rarr;1 core engineering team for Adobe Brand Concierge (joining one month post-ideation), driving foundational PoCs and technical spikes into production across agent orchestration, grounded retrieval, CPU inference services, and evaluation/optimization infrastructure.
+        Core platform engineering for Adobe Brand Concierge (following earlier work on Adobe Journey Optimizer), spanning end-to-end agent evaluation &amp; optimization, conversation serving, grounded citation attribution, guardrails, and ONNX retrieval services for global enterprise deployments across semiconductors &amp; hardware, enterprise SaaS, retail, travel &amp; hospitality, and sports/entertainment.
       </div>
       <ul>
-        <li><strong>Agent orchestration:</strong> Replaced multi-hop legacy pipelines with a unified PydanticAI runtime (BCOS) supporting declarative manifest compilation and Agent-to-Agent JSON-RPC protocols.</li>
-        <li><strong>Tool and capability infrastructure:</strong> Designed extensible Pydantic tool schemas with declarative pre/post execution hooks, state capture primitives, and configurable error recovery (<code>ToolErrorPolicy</code>).</li>
-        <li><strong>Source attribution:</strong> Built a factory-based citation engine integrating cross-encoder rerankers (<code>bge-reranker-v2-m3</code>, <code>e5-curriculum</code>) with score normalization, &lt;512-token truncation safeguards, and dynamic batching across enterprise pilots (NVIDIA, Synopsys, ITC, DSG).</li>
-        <li><strong>CPU inference services:</strong> Eliminated Candle batching limits by building CPU-only Text Embeddings Inference (TEI) services on ONNX Runtime with dynamic axes, reranking 30+ candidate passages in a single batch at <strong>588ms&ndash;796ms p50 latency</strong>.</li>
-        <li><strong>Agent evaluation and optimization:</strong> Integrated Genetic-Pareto Prompt Optimization (GEPA) and DSPy into Eval Studio, achieving Pareto-optimal prompt mutations with <strong>35x fewer rollouts</strong> than RL baselines.</li>
-        <li><strong>LLM routing:</strong> Added zero-downtime, manifest-driven runtime model profiles across Azure OpenAI (GPT-4.1 / GPT-4o), OpenAI, and private enterprise endpoints.</li>
-        <li><strong>Evaluation data:</strong> Developed high-throughput SQL Server dataset persistence with chunked staging tables, bulk row ingestion, and span-aware execution trace evaluators.</li>
-        <li><strong>Streaming and traffic control:</strong> Hardened the FastAPI/MongoDB conversation engine with SSE token streaming, artifact state replacement, and multi-tenant sandbox isolation.</li>
-        <li><strong>Semantic routing cache:</strong> Built a standalone FastEmbed (<code>bge-small</code>) and semantic clustering cache over historical logs for sub-millisecond recurring Q&amp;A lookups.</li>
+        <li><strong>Agent evaluation &amp; optimization platform (Primary Creator):</strong> Designed and built the full-stack evaluation studio (FastAPI, React, Okta SSO) with offline experiment runs, online span evaluation, GEPA reflective prompt &amp; judge optimization, tunable multi-judge rubrics, and a Judge Correlation Matrix.</li>
+        <li><strong>Durable evaluation persistence &amp; diagnostics:</strong> Engineered chunked SQL Server staging tables, bulk row ingestion, and paginated retrieval scaling up to 50,000-answer datasets, alongside guardrail analysis, offline source-attribution calibration, and replay runners.</li>
+        <li><strong>Foundational conversation service:</strong> Co-built the initial FastAPI/MongoDB conversation runtime from day one—implementing conversation APIs, session-store facades, SSE streaming contracts, A2A streaming client integration, tenant traffic/sandbox isolation, and web-traffic/engagement analytics ingestion.</li>
+        <li><strong>Declarative tooling &amp; MCP integration:</strong> Built the Pydantic tool configuration hierarchy with declarative pre/post execution hooks, state capture primitives, configurable error-recovery policies, and MCP tool integration in the successor PydanticAI runtime.</li>
+        <li><strong>LLM profile routing:</strong> Added manifest-driven runtime model profiles across Azure OpenAI, OpenAI, and private enterprise endpoints.</li>
+        <li><strong>Document-first citation attribution &amp; guardrails:</strong> Implemented the document-first LLM citation pipeline and remote source-attribution integration with cross-turn citation persistence, multi-layered preflight decision guardrails, tool-graph-aware system skills, and structured trace contracts.</li>
+        <li><strong>CPU ONNX retrieval serving:</strong> Extended the Text Embeddings Inference (TEI) / ONNX Runtime stack with INT8 quantization pipelines, custom E5 cross-encoder and two-stage embedding build targets, and a FastAPI multi-query batch reranking proxy.</li>
+        <li><strong>Early ingestion &amp; judge services:</strong> Contributed to early Brand Concierge web crawling and LLM-as-a-judge evaluation services.</li>
       </ul>
     </div>
 
@@ -170,10 +169,10 @@
 
     <!-- Publications & Patents Summary -->
     <div class="section-header" id="publications">
-      <span>Publications, Patents &amp; Invention Disclosures</span>
+      <span>Publications &amp; Patent</span>
       <span class="section-header-sub"><a href="../publications/">Publication Details &amp; BibTeX &rarr;</a></span>
     </div>
-    <div class="table-wrap" tabindex="0" role="region" aria-label="Publications and patents">
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Publications and patent">
       <table class="archive-table">
         <thead>
           <tr>
@@ -183,11 +182,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="date-col">Adobe Brand Concierge</td>
-            <td><span class="badge badge-patent">Invention disclosures</span></td>
-            <td><strong>Demand-paged agent context with revocable tool capabilities</strong>; <strong>Evidence-linked causal evolution of typed agent manifests</strong>; <strong>Anti-collusion dual optimization for judges and agents</strong> — Rajasekhar Reddy Mekala</td>
-          </tr>
           <tr>
             <td class="date-col">2024</td>
             <td><span class="badge">NAACL 2024</span></td>
@@ -293,8 +287,8 @@
     <div class="deepdive-container">
       <ul>
         <li><strong>Languages:</strong> Python, C++, Java, TypeScript / JavaScript, SQL, Bash.</li>
-        <li><strong>AI &amp; LLM Systems:</strong> PydanticAI, Model Context Protocol (MCP), ReAct, Agent-to-Agent (A2A), DSPy, GEPA, tool calling, multi-agent coordination, prompt optimization, and agent sandboxing.</li>
-        <li><strong>Retrieval &amp; Inference:</strong> Grounded RAG, cross-encoder reranking, ONNX Runtime, Text Embeddings Inference, FastEmbed, source attribution, vector indices, and semantic caching.</li>
+        <li><strong>AI &amp; LLM Systems:</strong> PydanticAI, Model Context Protocol (MCP), ReAct, Agent-to-Agent (A2A), GEPA, tool calling, multi-agent coordination, prompt &amp; judge optimization, guardrails, and agent sandboxing.</li>
+        <li><strong>Retrieval &amp; Inference:</strong> Grounded RAG, cross-encoder reranking, ONNX Runtime, INT8 quantization, Text Embeddings Inference, source attribution, and vector indices.</li>
         <li><strong>Backend &amp; Infrastructure:</strong> FastAPI, asyncio, Pydantic, Server-Sent Events, REST, JSON-RPC, Kafka, SQL Server, MongoDB, PostgreSQL, Redis, Docker, Kubernetes, Azure, AWS, GCP, Linux, and OpenTelemetry.</li>
         <li><strong>Academic Interests:</strong> Large Language Models &amp; Agentic Systems, Grounded Retrieval &amp; Neural Reranking, In-Context Learning &amp; Prompt Optimization, High-Throughput ML Serving &amp; Distributed Systems.</li>
         <li><strong>Other Interests:</strong> Badminton and Equity Market Research (<a href="https://rajasekharmekala.github.io/portfolio/">Portfolio Research Desk</a>).</li>

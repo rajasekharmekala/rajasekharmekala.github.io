@@ -32,17 +32,16 @@
       institution: Adobe, Santa Clara, CA
       year: Jun 2023 - Present
       description:
-        - title: Part of the 0->1 core engineering team for Adobe Brand Concierge (joining one month post-ideation), driving foundational PoCs and technical spikes into production across runtime systems, neural retrieval engines, and automated optimization platforms (previously Adobe Journey Optimizer).
+        - title: Core platform engineering for Adobe Brand Concierge (following earlier work on Adobe Journey Optimizer), supporting enterprise deployments across semiconductors & hardware, enterprise SaaS, retail, travel & hospitality, and sports/entertainment.
           contents:
-            - Architected the unified Brand Concierge Operating System (BCOS) using PydanticAI, replacing multi-hop legacy pipelines with a single high-performance agent runtime supporting declarative manifest compilation and A2A JSON-RPC protocols.
-            - Designed an extensible Pydantic tool configuration subsystem with declarative pre/post execution hooks, state capture primitives, and configurable ToolErrorPolicy for deterministic error recovery.
-            - Engineered a factory-based source attribution and citation engine integrating remote cross-encoder rerankers (bge-reranker-v2-m3, e5-curriculum), client-side normalization, token truncation safeguards (<512 tokens), and dynamic request batching across enterprise pilots (NVIDIA, Synopsys, ITC, DSG).
-            - Built CPU-only Text Embeddings Inference (TEI) microservices on ONNX Runtime (ORT) with dynamic axes, eliminating Candle batching limits to rerank 30+ candidate passages in a single batch with sub-second p50 latency (588ms–796ms).
-            - Built a dynamic named LLM profile system enabling zero-downtime, manifest-driven runtime model routing across Azure OpenAI (GPT-4.1 / GPT-4o), OpenAI, and private enterprise model endpoints.
-            - Integrated Genetic-Pareto Prompt Optimization (GEPA) and DSPy into Eval Studio for reflective prompt compilation, achieving Pareto-optimal prompt mutations with 35x fewer rollouts than RL baselines.
-            - Developed high-throughput MSSQL dataset persistence with chunked staging tables, bulk row ingestion, real-time build progress tracking, and span-aware execution trace evaluators.
-            - Hardened core FastAPI/MongoDB conversation engine with Server-Sent Events (SSE) token streaming, artifact state replacement (StreamEventProcessor), and sandbox isolation (TrafficControlEnforcer).
-            - Engineered a standalone Q&A routing cache using local fastembed (bge-small) and semantic clustering over historical interaction logs to serve recurring brand queries with sub-millisecond lookups.
+            - Primary creator and builder of the end-to-end LLM evaluation and optimization platform (FastAPI, React, Okta SSO), integrating GEPA reflective prompt and judge optimization, multi-judge correlation diagnostics, guardrail analysis, and offline source-attribution calibration.
+            - Engineered durable SQL Server dataset persistence with chunked staging tables, bulk row ingestion, and paginated retrieval scaling up to 50,000-answer datasets alongside replay evaluation runners.
+            - Co-built the foundational FastAPI/MongoDB conversation runtime from day one, including conversation APIs, session-store facades, SSE streaming contracts, A2A streaming client integration, tenant traffic/sandbox isolation, and web-traffic/engagement analytics ingestion.
+            - Built the Pydantic tool configuration hierarchy with declarative pre/post execution hooks, state capture primitives, configurable error-recovery policies, and MCP tool integration in the successor PydanticAI runtime.
+            - Added manifest-driven runtime LLM profile routing across Azure OpenAI, OpenAI, and private enterprise model endpoints.
+            - Implemented the document-first LLM citation pipeline and remote source-attribution integration with cross-turn citation tracking, multi-layered preflight decision guardrails, tool-graph-aware system skills, and structured execution trace contracts.
+            - Extended the CPU Text Embeddings Inference (TEI) / ONNX Runtime stack with INT8 quantization pipelines, custom E5 cross-encoder and two-stage embedding build targets, and a FastAPI multi-query batch reranking proxy.
+            - Contributed to early Brand Concierge web crawling and LLM-as-a-judge evaluation services.
 
     - title: Software Engineer
       institution: TruckX, Sunnyvale, CA
@@ -85,8 +84,6 @@
       items: "EMNLP 2022: Snoopy: An Online Interface for Exploring Pretraining Term Frequencies on Few-Shot LM Performance. Yasaman Razeghi*, Rajasekhar Mekala*, Robert Logan, Matt Gardner, Sameer Singh."
     - year: 2019
       items: "US Patent US20190354388: Tenant-side detection, classification, and mitigation of noisy-neighbor induced performance degradation. S. Mitra, S. Khosla, S. Mehta, M. R. S. Reddy, A. D. Shah."
-    - year: 2026
-      items: "Invention Disclosures (Adobe Brand Concierge): Demand-paged agent context with revocable tool capabilities; Evidence-linked causal evolution of typed agent manifests; Anti-collusion dual optimization for judges and agents."
 
 - title: Teaching
   type: time_table
@@ -123,8 +120,8 @@
 - title: Technical skills
   type: list
   contents:
-    - <u>AI & Agent Runtimes:</u> LLM Agent Architectures, PydanticAI, Model Context Protocol (MCP), ReAct, A2A Protocol, DSPy, GEPA, Tool Calling, Multi-Agent Coordination, Prompt Optimization, Agent Sandboxing
-    - <u>Retrieval & Inference:</u> Grounded RAG, Cross-Encoder Reranking (BGE, E5), ONNX Runtime (ORT), Text Embeddings Inference (TEI), FastEmbed, Source Attribution, Vector Indices, Semantic Caching
+    - <u>AI & Agent Runtimes:</u> LLM Agent Architectures, PydanticAI, Model Context Protocol (MCP), ReAct, A2A Protocol, GEPA, Tool Calling, Multi-Agent Coordination, Prompt & Judge Optimization, Guardrails, Agent Sandboxing
+    - <u>Retrieval & Inference:</u> Grounded RAG, Cross-Encoder Reranking (E5, BGE), ONNX Runtime (ORT), INT8 Quantization, Text Embeddings Inference (TEI), Source Attribution, Vector Indices
     - <u>Evaluation & ML:</u> LLM-as-a-Judge, Prediction-Powered Inference (PPI), Process Reward Models (PRMs), Span-level Evaluators, PyTorch, HuggingFace Transformers, Scikit-Learn
     - <u>Programming Languages:</u> Python, Java, C/C++, TypeScript, SQL, Bash, Scala
     - <u>Web & Distributed Systems:</u> FastAPI, asyncio, Pydantic, React, Node.js, Server-Sent Events (SSE), REST APIs, JSON-RPC, Kafka
