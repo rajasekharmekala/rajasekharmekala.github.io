@@ -76,16 +76,9 @@
         semiconductors &amp; hardware, enterprise SaaS, retail, travel &amp; hospitality, and sports/entertainment.
       </div>
       <ul>
-        <li><strong>Evaluation &amp; Optimization Engine:</strong> Built the FastAPI service and workflow orchestration
-          supporting offline experiment runs, online span evaluation, knowledge-base diagnostics, and Okta-authenticated
-          multi-tenant workflows.</li>
-        <li><strong>GEPA Reflective Prompt &amp; Judge Optimization:</strong> Integrated Genetic-Pareto Prompt
-          Optimization (GEPA) with multi-profile reasoning models, reflection loops, tunable multi-judge rubrics, and a
-          Judge Correlation Matrix.</li>
-        <li><strong>Durable Staged Persistence:</strong> Engineered chunked SQL Server staging tables, bulk row
-          ingestion, paginated retrieval, and replay diagnostics scaling up to 50,000-answer evaluation datasets.</li>
-        <li><strong>Grounding &amp; Guardrail Diagnostics:</strong> Built offline source-attribution calibration and
-          guardrail analysis views to compare assistant variants and inspect execution traces end-to-end.</li>
+        <li><strong>Evaluation &amp; Optimization Architecture:</strong> Designed and built the offline/online evaluation service and workflow orchestration (FastAPI) supporting experiment runs, online span evaluation, knowledge-base diagnostics, and multi-tenant workflows.</li>
+        <li><strong>GEPA Reflective Prompt &amp; Judge Optimization:</strong> Integrated Genetic-Pareto Prompt Optimization (GEPA) with multi-profile reasoning models, reflection loops, tunable multi-judge rubrics, and Judge Correlation Matrices.</li>
+        <li><strong>Large-Scale Persistence &amp; Grounding Calibration:</strong> Engineered 50k-scale SQL Server staged evaluation persistence, replay diagnostics, offline source-attribution calibration, and guardrail analysis to govern agent quality across enterprise deployments.</li>
       </ul>
     </div>
 
@@ -96,24 +89,12 @@
         <span class="deepdive-meta">Adobe Inc. &bull; Core Engineering Team</span>
       </div>
       <div class="deepdive-keypts">
-        Built foundational conversation-service infrastructure from initial prototypes through production and
-        contributed core runtime, citation, safety, and ONNX serving subsystems to the successor PydanticAI platform.
+        Co-built the foundational conversation-service runtime and engineered core tooling, attribution, guardrail, and ONNX retrieval subsystems in the successor PydanticAI platform.
       </div>
       <ul>
-        <li><strong>Foundational Conversation Service:</strong> Co-built the initial FastAPI/MongoDB conversation
-          runtime from day one—implementing conversation APIs, session-store facades, SSE streaming contracts, A2A
-          streaming client integration, tenant traffic/sandbox isolation, and web-traffic/engagement analytics
-          ingestion.</li>
-        <li><strong>Declarative Tooling &amp; LLM Profile Routing:</strong> Built the Pydantic tool configuration
-          hierarchy with declarative pre/post hooks, state capture primitives, configurable error-recovery policies, MCP
-          integration, and manifest-driven named LLM profile routing across Azure OpenAI, OpenAI, and private enterprise
-          endpoints.</li>
-        <li><strong>Document-First Citation Attribution &amp; Guardrails:</strong> Implemented the document-first LLM
-          citation pipeline and remote source-attribution integration with cross-turn citation tracking, multi-layered
-          preflight decision guardrails, tool-graph-aware system skills, and structured trace schemas.</li>
-        <li><strong>CPU ONNX Retrieval Serving:</strong> Extended the Hugging Face Text Embeddings Inference (TEI) /
-          ONNX Runtime stack with INT8 quantization pipelines, custom E5 cross-encoder and two-stage embedding targets,
-          and a FastAPI multi-query batch reranking proxy.</li>
+        <li><strong>Multi-Tenant Conversation &amp; Agent Runtime:</strong> Co-built the initial FastAPI/MongoDB conversation service (SSE streaming, A2A integration, tenant/sandbox traffic isolation, engagement analytics) and designed declarative Pydantic/MCP tool schemas with pre/post hooks, configurable error-recovery policies, and manifest-driven multi-provider LLM profile routing.</li>
+        <li><strong>Document-First Citation Attribution &amp; Guardrails:</strong> Implemented the document-first LLM citation pipeline with cross-turn persistence, multi-layered preflight decision guardrails, tool-graph-aware system skills, and structured trace contracts.</li>
+        <li><strong>CPU ONNX Retrieval Serving:</strong> Extended the Text Embeddings Inference (TEI) / ONNX Runtime stack with INT8 quantization pipelines, custom E5 cross-encoder and two-stage embedding targets, and a FastAPI multi-query batch reranking proxy.</li>
       </ul>
     </div>
 

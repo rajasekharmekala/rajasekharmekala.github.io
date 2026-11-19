@@ -109,17 +109,12 @@
         <span class="deepdive-meta">Late 2024 &ndash; Present &bull; Santa Clara, CA</span>
       </div>
       <div class="deepdive-keypts">
-        Core platform engineering for Adobe Brand Concierge, spanning end-to-end agent evaluation &amp; optimization, conversation serving, grounded citation attribution, guardrails, and ONNX retrieval services for global enterprise deployments across semiconductors &amp; hardware, enterprise SaaS, retail, travel &amp; hospitality, and sports/entertainment.
+        Core platform engineering for Adobe Brand Concierge across evaluation &amp; optimization, multi-tenant agent runtimes, grounded attribution, guardrails, and ONNX retrieval for global enterprise deployments (semiconductors, SaaS, retail, travel/hospitality, and sports/entertainment).
       </div>
       <ul>
-        <li><strong>Agent evaluation &amp; optimization platform (Primary Contributor):</strong> Designed and built the offline and online evaluation platform (FastAPI, Okta SSO) with experiment orchestration, online span evaluation, GEPA reflective prompt &amp; judge optimization, tunable multi-judge rubrics, and a Judge Correlation Matrix.</li>
-        <li><strong>Durable evaluation persistence &amp; diagnostics:</strong> Engineered chunked SQL Server staging tables, bulk row ingestion, and paginated retrieval scaling up to 50,000-answer datasets, alongside guardrail analysis, offline source-attribution calibration, and replay runners.</li>
-        <li><strong>Foundational conversation service:</strong> Co-built the initial FastAPI/MongoDB conversation runtime from day one—implementing conversation APIs, session-store facades, SSE streaming contracts, A2A streaming client integration, tenant traffic/sandbox isolation, and web-traffic/engagement analytics ingestion.</li>
-        <li><strong>Declarative tooling &amp; MCP integration:</strong> Built the Pydantic tool configuration hierarchy with declarative pre/post execution hooks, state capture primitives, configurable error-recovery policies, and MCP tool integration in the successor PydanticAI runtime.</li>
-        <li><strong>LLM profile routing:</strong> Added manifest-driven runtime model profiles across Azure OpenAI, OpenAI, and private enterprise endpoints.</li>
-        <li><strong>Document-first citation attribution &amp; guardrails:</strong> Implemented the document-first LLM citation pipeline and remote source-attribution integration with cross-turn citation persistence, multi-layered preflight decision guardrails, tool-graph-aware system skills, and structured trace contracts.</li>
-        <li><strong>CPU ONNX retrieval serving:</strong> Extended the Text Embeddings Inference (TEI) / ONNX Runtime stack with INT8 quantization pipelines, custom E5 cross-encoder and two-stage embedding build targets, and a FastAPI multi-query batch reranking proxy.</li>
-        <li><strong>Early ingestion &amp; judge services:</strong> Contributed to early Brand Concierge web crawling and LLM-as-a-judge evaluation services.</li>
+        <li><strong>LLM Evaluation &amp; Optimization Platform (Primary Contributor):</strong> Designed and built the offline/online evaluation and prompt-optimization platform—combining GEPA reflective prompt and judge optimization, tunable multi-judge rubrics, Judge Correlation Matrices, guardrail analysis, grounding calibration, and 50k-scale SQL Server staged datasets to govern production agent quality.</li>
+        <li><strong>Multi-Tenant Agent Runtime &amp; Tooling Architecture:</strong> Co-built the foundational FastAPI/MongoDB conversation runtime (SSE streaming, A2A integration, tenant/sandbox traffic isolation, engagement analytics) and engineered core subsystems in the successor PydanticAI platform—declarative tool/MCP capability schemas with pre/post hooks, configurable error-recovery policies, and manifest-driven multi-provider LLM profile routing.</li>
+        <li><strong>Grounded Attribution, Guardrails &amp; CPU ONNX Retrieval:</strong> Implemented document-first citation attribution with cross-turn persistence, multi-layered preflight decision guardrails, and tool-graph-aware system skills; extended CPU ONNX / Text Embeddings Inference (TEI) serving with INT8 quantization, custom E5 models, and batch reranking.</li>
       </ul>
     </div>
 
@@ -132,9 +127,8 @@
         Backend engineering, production runtime operations, and architectural design for Adobe Journey Optimizer authoring and execution systems.
       </div>
       <ul>
-        <li><strong>Authoring &amp; conflict detection services:</strong> Built Java authoring and validation APIs for Campaign/Journey Conflict Detection, integrating Accelerated Query Service (AQS) audience-overlap scoring, OLAC-aware campaign caching, and channel, ruleset, and business-event filtering.</li>
-        <li><strong>Runtime operations, scaling &amp; prioritization architecture:</strong> Handled production on-call, infrastructure debugging, and scaling for the AJO journey runtime; contributed technical proposals for message/journey prioritization features and runtime SDK integration for inbound channels (code-based experiences and content cards).</li>
-        <li><strong>Journey lifecycle &amp; test-mode APIs:</strong> Implemented merge-policy lifecycle handling across draft, live, and duplicated journey versions and asynchronous test-mode execution endpoints.</li>
+        <li><strong>Authoring &amp; Conflict Detection Architecture:</strong> Built Java authoring and validation services for Campaign/Journey Conflict Detection integrating Accelerated Query Service (AQS) audience-overlap scoring, OLAC-aware caching, merge-policy lifecycle handling, and inbound channel orchestration (code-based experiences, content cards).</li>
+        <li><strong>Runtime Operations, Scaling &amp; Prioritization Design:</strong> Handled production on-call, infrastructure debugging, and scaling for the AJO journey runtime; drove technical proposals for message/journey prioritization and runtime SDK integration.</li>
       </ul>
     </div>
 
